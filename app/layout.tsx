@@ -12,7 +12,7 @@ const ovo = OvoFont({
 
 export const metadata: Metadata = {
   title: "Portfolio – Abril Rodríguez",
-  description: "",
+  description: "Portfolio de Abril Rodríguez",
 };
 
 export default function RootLayout({
