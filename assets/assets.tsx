@@ -9,6 +9,13 @@ import header_bg_color from './header_bg_color.png';
 import hand_icon from './hand_icon.png';
 import download_icon from './download_icon.png';
 import right_arrow_white from './right_arrow_white.png';
+import code_icon from './code_icon.png';
+import code_icon_dark from './code_icon_dark.png';
+import edu_icon from './edu_icon.png';
+import edu_icon_dark from './edu_icon_dark.png';
+import project_icon from './project_icon.png';
+import project_icon_dark from './project_icon_dark.png';
+
 
 export const assets = {
     profile_img,
@@ -21,5 +28,23 @@ export const assets = {
     header_bg_color,
     hand_icon,
     download_icon,
-    right_arrow_white
+    right_arrow_white,
+    code_icon,
+    code_icon_dark,
+    edu_icon,
+    edu_icon_dark,
+    project_icon,
+    project_icon_dark
 }
+
+export const infoList = [
+    {icon: assets.code_icon, iconDark: assets.code_icon_dark,
+        title: 'Lenguages', description: 'ReactJS'
+    },
+    {icon: assets.edu_icon, iconDark: assets.edu_icon_dark,
+        title: 'Formación', description: 'Lic. '
+    },
+    {icon: assets.project_icon, iconDark: assets.project_icon_dark,
+        title: 'Proyectos', description: '+4 '
+    }
+]
