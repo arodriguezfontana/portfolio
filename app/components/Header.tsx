@@ -9,13 +9,13 @@ const Header = () => {
                 <Image src={assets.profile_img} alt='Abril Rodríguez profile image' className='rounded-full w-32' />
             </div>
 
-            <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
+            <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>
                 Hola, soy Abril Rodríguez <Image src={assets.hand_icon} alt='hand icon' className='w-6' />
             </h3>
 
-            <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Fullstack developer.</h1>
+            <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Fullstack developer.</h1>
             
-            <p className='max-w-2xl mx-auto font-Ovo'>Estudiante avanzada de la Licenciatura en Informática.
+            <p className='max-w-2xl mx-auto font-ovo'>Estudiante avanzada de la Licenciatura en Informática.
                 Mi stack principal incluye Java con Spring para el backend y React para el frontend.
                 Participé en proyectos colaborativos y personales.
                 Busco integrarme a un equipo IT donde pueda seguir aprendiendo y aportar desde una base técnica sólida.

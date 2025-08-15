@@ -39,12 +39,12 @@ export const assets = {
 
 export const infoList = [
     {icon: assets.code_icon, iconDark: assets.code_icon_dark,
-        title: 'Lenguages', description: 'ReactJS'
+        title: 'Lenguages', description: 'Java, Typescript, Javascript, Python, HTML, CSS y Tailwind CSS'
     },
     {icon: assets.edu_icon, iconDark: assets.edu_icon_dark,
-        title: 'Formación', description: 'Lic. '
+        title: 'Formación', description: 'Lic. en Informática'
     },
     {icon: assets.project_icon, iconDark: assets.project_icon_dark,
-        title: 'Proyectos', description: '+4 '
+        title: 'Proyectos', description: '+5 proyectos realizados con diversas tecnologias '
     }
 ]

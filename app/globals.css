@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
-* {
-  font-family: outfit;
+body {
+  font-family: var(--font-outfit);
+}
+
+@theme {
+  --color-light-hover: #E6E6E6;
+  --color-dark-hover: #24004a;
+  --color-dark-theme: #11001f;
+
+  --shadow-black: 3px 3px 0 #000;
+  --shadow-white: 3px 3px 0 #fff;
+}
+
+@layer base {
+  .font-outfit {
+    font-family: var(--font-outfit);
+  }
+  .font-ovo {
+    font-family: var(--font-ovo);
+  }
 }
