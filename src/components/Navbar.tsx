@@ -11,35 +11,30 @@ export const Navbar = ({ lang, theme, setLang, setTheme }: uiProps) => {
     ];
 
     return (
-        <>
-            <nav className="fixed top-0 left-0 w-full z-50 ">
+        <nav className="fixed top-0 left-0 w-full z-50">
+            <div className="flex items-center justify-between px-6 py-6">
 
-                <ul className="flex justify-center gap-5 p-4">
+                <div className="w-20"></div>
+
+                <ul className="flex gap-6">
                     {links.map((l) => (
                         <li key={l.name}>
                             <a href={l.href}>{l.name}</a>
                         </li>
                     ))}
                 </ul>
-                <ul className="flex justify-center gap-5 ">
-                    <li>
-                        <button
-                            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                            className="w-10 text-center"
-                        >
-                            {theme === "light" ? "🌙" : "☀️"}
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            onClick={() => setLang(lang === "es" ? "en" : "es")}
-                            className="w-10 text-center"
-                        >
-                            {lang.toUpperCase()}
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </>
-    )
-}
+
+                <div className="flex items-center gap-4">
+                    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+                        {theme === "light" ? "🌙" : "☀️"}
+                    </button>
+                    <button
+                        onClick={() => setLang(lang === "es" ? "en" : "es")}
+                    >
+                        {lang.toUpperCase()}
+                    </button>
+                </div>
+            </div>
+        </nav>
+    );
+};
