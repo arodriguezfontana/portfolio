@@ -5,7 +5,7 @@ import { assets } from '@/assets/assets'
 const Header = () => {
     return (
         <>
-            <div className='px-[20%] py-20'>
+            <div className='pt-21 pb-15'>
                 <div className='flex items-center gap-3'>
                     <Image className='rounded-full w-32' src={assets.abril_image} alt='Imagen de Abril Rodríguez'/>
                     <div>Disponible para trabajar</div>
