@@ -6,12 +6,12 @@ type InfoCardProps = {
     children: React.ReactNode
 }
 
-const infoCard = ({ icon, title, children }: InfoCardProps) => {
+const InfoCard = ({ icon, title, children }: InfoCardProps) => {
 
     return (
         <>
-            <div >
-                <div className='flex items-center gap-3 text-2xl font-[500]'>
+            <div className='mb-10'>
+                <div className='flex items-center gap-2 text-xl font-[500]'>
                     <div>{icon}</div>
                     <h4>{title}</h4>
                 </div>
@@ -21,4 +21,4 @@ const infoCard = ({ icon, title, children }: InfoCardProps) => {
     )
 }
 
-export default infoCard
+export default InfoCard

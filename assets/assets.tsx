@@ -1,10 +1,7 @@
 import abril_image from "./abril_image.jpeg"
+import gog_image from "./public/gog.png"
 
 export const assets = {
     abril_image,
+    gog_image
 }
-
-export const experienceInfo = [
-   {title: "FullStack Developer", date_my:"Septiembre 2024", company: "Freelance",
-    description: "Desarrollo proyectos personales y colaborativos, practicando distintas tecnologias"} 
-]

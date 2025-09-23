@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className='px-[20%]'>
+      <div className='px-[10%]'>
         <Header />
         <Experience />
       </div>
