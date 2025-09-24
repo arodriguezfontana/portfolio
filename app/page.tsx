@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className='px-[10%]'>
+      <div className='xl:px-[20%] sm:px-[10%]'>
         <Header />
         <Experience />
         <Projects />
