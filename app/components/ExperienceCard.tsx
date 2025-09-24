@@ -1,4 +1,5 @@
 import React from 'react'
+import { Dot } from 'lucide-react'
 
 type ExperienceCardProps = {
     role: string
@@ -10,11 +11,14 @@ type ExperienceCardProps = {
 const ExperienceCard = ({ role, company, date, description }: ExperienceCardProps) => {
     return (
         <>
-            <div className='ml-10 mt-5'>
-                <h5 className='text-rose-500 font-[500] text-xl'>{role}</h5>
-                <p className='text-black-500 font-[400] text-lg'>{company}</p>
-                <p className='text-sm'>{date}</p>
-                <p className='mt-4 text-sm'>{description}</p>
+            <div className='mx-8 flex'>
+                <Dot size={50} className='text-rose-500'/>
+                <div className='mr-15'>
+                <h5 className='text-rose-500 font-[600] text-2xl'>{role}</h5>
+                <p className='text-black-500 font-[00] text-xl'>{company}</p>
+                <p className='text-md'>{date}</p>
+                </div>
+                <p className='text-md text-gray-700 w-md'>{description}</p>
             </div>
         </>
     )

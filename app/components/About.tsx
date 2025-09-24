@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <Card
-                icon={<UserRound size={30} className="text-blak-600" />}
+                icon={<UserRound size={35} className="text-blak-600" />}
                 title="Sobre mí"
             >
                 <div></div>

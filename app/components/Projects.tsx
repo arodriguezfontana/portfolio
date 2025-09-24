@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <>
              <Card
-                icon={<CodeXml size={30} className="text-blak-600" />}
+                icon={<CodeXml size={35} className="text-blak-600" />}
                 title="Proyectos"
             >
                 <ProjectCard

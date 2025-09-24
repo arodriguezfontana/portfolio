@@ -35,7 +35,7 @@ const Header = () => {
                 </div>
                 <div>
                     <h2 className='text-5xl font-[700] mt-5'>Hola, soy Abril</h2>
-                    <p className='mt-2 text-lg'>Con más de 4 años de estudio, próxima <span className='text-rose-500 font-[500]'>Licenciada en Informática</span>, especializada en <span className='text-rose-500 font-[500]'>Frontend</span> y <span className='text-rose-500 font-[500]'>Backend</span>, y con constante aprendizaje de nuevas tecnologías.
+                    <p className='mt-2 text-lg w-2xl'>Con más de 4 años de estudio, próxima <span className='text-rose-500 font-[500]'>Licenciada en Informática</span>. Especializada en <span className='text-rose-500 font-[500]'>Frontend</span> y <span className='text-rose-500 font-[500]'>Backend</span>, y con constante aprendizaje de nuevas tecnologías.
                     </p>
                 </div>
                 <div className='flex mt-4 gap-2 font-[500]'>
