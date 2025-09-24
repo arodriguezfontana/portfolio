@@ -18,8 +18,10 @@ const ProjectCard = ({ image, title, technologies, description, links }: Project
             <div>
                 <div>
                     <Image
-                    scr={image}
-                    alt={title}
+                        src={image}
+                        alt={title}
+                        width={400}
+                        height={400}
                     />
                 </div>
                 <div>

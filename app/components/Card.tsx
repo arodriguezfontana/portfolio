@@ -1,12 +1,12 @@
 import React from 'react'
 
-type InfoCardProps = {
+type CardProps = {
     icon: React.ReactNode
     title: string
     children: React.ReactNode
 }
 
-const InfoCard = ({ icon, title, children }: InfoCardProps) => {
+const Card = ({ icon, title, children }: CardProps) => {
 
     return (
         <>
@@ -21,4 +21,4 @@ const InfoCard = ({ icon, title, children }: InfoCardProps) => {
     )
 }
 
-export default InfoCard
+export default Card
