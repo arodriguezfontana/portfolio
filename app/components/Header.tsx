@@ -2,13 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
 import Button from './Button'
-import { Download, Mail, UserRoundSearch } from 'lucide-react'
+import { Download, Mail, UserRoundSearch, CodeXml  } from 'lucide-react'
 
 const Header = () => {
 
     const goToLinkedIn = () => {
         window.open("https://www.linkedin.com/in/rodriguezfontana/", "_blank");
     };
+
+    const goToGitHub = () => {
+        window.open("https://github.com/arodriguezfontana", "_blank");
+    };
+
 
     const goToMail = () => {
         window.location.href = "mailto:arodriguezfontana@gmail.com";
@@ -28,7 +33,7 @@ const Header = () => {
                     <Image className='rounded-full w-32' src={assets.abril_image} alt='Imagen de Abril Rodríguez' />
                     <Button
                         onClick={goToLinkedIn}
-                        className="font-[500] hover:bg-green-600 hover:text-white bg-white border-green-600 border-1 text-green-600"
+                        className="bg-green-500 text-white font-[500] hover:bg-green-700 transition-all duration-200 transform"
                     >
                         Disponible para trabajar
                     </Button>
@@ -50,8 +55,13 @@ const Header = () => {
                         icon={<UserRoundSearch size={18} />}
                     >LinkedIn</Button>
                     <Button
+                        onClick={goToGitHub}
+                        className=' border-black border-1 hover:bg-black hover:text-white'
+                        icon={<CodeXml size={18} />}
+                    >GitHub</Button>
+                    <Button
                         onClick={downloadCV}
-                        className='hover:bg-rose-500 hover:text-white bg-white border-rose-500 border-1 text-rose-500'
+                        className='bg-rose-500 text-white hover:bg-rose-700'
                         icon={<Download size={18} />}
                     >CV</Button>
                 </div>

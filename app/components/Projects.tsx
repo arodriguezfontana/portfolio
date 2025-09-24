@@ -36,32 +36,34 @@ const Projects = () => {
 
     return (
         <>
-            <Card
-                icon={<CodeXml size={35} className="text-blak-600" />}
-                title="Proyectos"
-            >
-                <ProjectCard
-                    image="/gog_image.png"
-                    title="GOG - Ecommerce de videojuegos multiplataforma"
-                    technologies={techsgog}
-                    description="Tienda digital de videojuegos inspirada en GOG, que permite a los usuarios comprar, reseñar y gestionar su colección de juegos en versiones web y móvil."
-                    repo="https://github.com/arodriguezfontana/gog-frontend"
-                />
-                <ProjectCard
-                    image="/epers_image.png"
-                    title="Epersgeist - Sistema de persistencia con múltiples bases de datos"
-                    technologies={techsepers}
-                    description="Aplicación backend dividida en seis etapas, cada una con un enfoque distinto de persistencia de datos. Incorpora múltiples bases de datos, pruebas automatizadas, geolocalización y búsquedas semánticas."
-                    repo="https://github.com/arodriguezfontana/epersgeist-backend"
-                />
-                <ProjectCard
-                    image="/wordle_image.png"
-                    title="Wordle – Juego web interactivo de adivinanza de palabras"
-                    technologies={techswordle}
-                    description="Aplicación web interactiva inspirada en Wordle, que permite jugar con distintos niveles de dificultad, con validaciones en tiempo real, manejo de sesiones y una interfaz responsive."
-                    repo="https://github.com/arodriguezfontana/wordle-game"
-                />
-            </Card>
+            <section id='projects'>
+                <Card
+                    icon={<CodeXml size={35} className="text-blak-600" />}
+                    title="Proyectos"
+                >
+                    <ProjectCard
+                        image="/gog_image.png"
+                        title="GOG - Ecommerce de videojuegos multiplataforma"
+                        technologies={techsgog}
+                        description="Tienda digital de videojuegos inspirada en GOG, que permite a los usuarios comprar, reseñar y gestionar su colección de juegos en versiones web y móvil."
+                        repo="https://github.com/arodriguezfontana/gog-frontend"
+                    />
+                    <ProjectCard
+                        image="/epers_image.png"
+                        title="Epersgeist - Sistema de persistencia con múltiples bases de datos"
+                        technologies={techsepers}
+                        description="Aplicación backend dividida en seis etapas, cada una con un enfoque distinto de persistencia de datos. Incorpora múltiples bases de datos, pruebas automatizadas, geolocalización y búsquedas semánticas."
+                        repo="https://github.com/arodriguezfontana/epersgeist-backend"
+                    />
+                    <ProjectCard
+                        image="/wordle_image.png"
+                        title="Wordle – Juego web interactivo de adivinanza de palabras"
+                        technologies={techswordle}
+                        description="Aplicación web interactiva inspirada en Wordle, que permite jugar con distintos niveles de dificultad, con validaciones en tiempo real, manejo de sesiones y una interfaz responsive."
+                        repo="https://github.com/arodriguezfontana/wordle-game"
+                    />
+                </Card>
+            </section>
         </>
     )
 }

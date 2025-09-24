@@ -17,18 +17,19 @@ const Navbar = () => {
   }, [])
 
   const links = [
+    { href: "#top", label: "Intro" },
     { href: "#experience", label: "Experiencia" },
     { href: "#projects", label: "Proyectos" },
     { href: "#about", label: "Sobre mí" },
-    { href: "#contact", label: "Contacto" },
+    { href: "mailto:arodriguezfontana@gmail.com", label: "Contacto" },
   ]
 
   return (
     <>
       <nav className='w-full fixed py-3 flex justify-center'>
         <ul
-          className={`flex gap-3 rounded-full px-5 py-2 text-sm 
-        ${show ? "bg-white/40 backdrop-blur-md shadow-md transition-all duration-200" : ""}`}
+          className={`flex gap-3 rounded-full px-5 py-2 text-md 
+        ${show ? "bg-white/60 backdrop-blur-md shadow-md transition-all duration-200" : ""}`}
         >
           {links.map(({ href, label }) => (
             <li key={href}>
