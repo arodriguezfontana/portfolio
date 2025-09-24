@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { ReactNode } from 'react'
+import { MoveRight } from 'lucide-react'
 
 type Technology = {
   logo: ReactNode
@@ -13,13 +14,10 @@ type ProjectCardProps = {
   title: string
   technologies: Technology[]
   description: string
-  links: {
-    repo?: string
-    prev?: string
-  }
+  repo: string
 }
 
-const ProjectCard = ({ image, title, technologies, description, links }: ProjectCardProps) => {
+const ProjectCard = ({ image, title, technologies, description, repo }: ProjectCardProps) => {
     return (
         <>
             <div className='flex mb-4'>
@@ -39,6 +37,9 @@ const ProjectCard = ({ image, title, technologies, description, links }: Project
                             </span>
                         ))}
                         <p className='mb-1 mt-1 text-gray-700'>{description}</p>
+                        <a href={repo} className='flex gap-2 text-blue-500 font-[600]'>Repositorio
+                            <MoveRight className='text-blue-500'/>
+                        </a>
                     </div>
                 </div>
             </div>
