@@ -37,8 +37,8 @@ const ProjectCard = ({ image, title, technologies, description, repo }: ProjectC
                             </span>
                         ))}
                         <p className='mb-1 mt-1 text-gray-700'>{description}</p>
-                        <a href={repo} className='flex gap-2 text-blue-500 font-[600]'>Repositorio
-                            <MoveRight className='text-blue-500'/>
+                        <a href={repo} className='flex gap-2 text-rose-500 font-[600]'>Repositorio
+                            <MoveRight className='text-rose-500'/>
                         </a>
                     </div>
                 </div>

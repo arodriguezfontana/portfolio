@@ -3,35 +3,44 @@ import { CodeXml } from "lucide-react"
 import Card from './Card'
 import ProjectCard from './ProjectCard'
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaJava } from "react-icons/fa"
-import { SiTypescript, SiJavascript, SiExpress, SiReact, SiSpringboot, SiPostgresql, SiMongodb, SiNeo4J, SiElasticsearch, SiJunit5 } from "react-icons/si"
+import { SiTypescript, SiJavascript, SiExpress, SiReact, SiSpringboot, SiPostgresql, SiMongodb, SiNeo4J, SiElasticsearch, SiTailwindcss } from "react-icons/si"
 
 const Projects = () => {
 
     const techsgog = [
-        { logo: <FaReact />, tecnologia: "React", bg: "bg-blue-500" },
-        { logo: <SiReact />, tecnologia: "React Native", bg: "bg-blue-500" },
-        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-blue-500" },
-        { logo: <FaCss3Alt />, tecnologia: "CSS", bg: "bg-blue-500" },
-        { logo: <SiExpress />, tecnologia: "Express.js", bg: "bg-blue-500" },
-        { logo: <FaNodeJs />, tecnologia: "Node.js", bg: "bg-blue-500" },
-        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-blue-500" },
-        { logo: <SiJavascript />, tecnologia: "JavaScript", bg: "bg-blue-500" },
+        { logo: <FaReact />, tecnologia: "React", bg: "bg-rose-500" },
+        { logo: <SiReact />, tecnologia: "React Native", bg: "bg-rose-500" },
+        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-rose-500" },
+        { logo: <FaCss3Alt />, tecnologia: "CSS", bg: "bg-rose-500" },
+        { logo: <SiExpress />, tecnologia: "Express.js", bg: "bg-rose-500" },
+        { logo: <FaNodeJs />, tecnologia: "Node.js", bg: "bg-rose-500" },
+        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-rose-500" },
+        { logo: <SiJavascript />, tecnologia: "JavaScript", bg: "bg-rose-500" },
     ]
 
     const techsepers = [
-        { logo: <FaJava />, tecnologia: "Java", bg: "bg-blue-500" },
-        { logo: <SiSpringboot />, tecnologia: "Spring Boot", bg: "bg-blue-500" },
-        { logo: <SiPostgresql />, tecnologia: "PostgreSQL", bg: "bg-blue-500" },
-        { logo: <SiMongodb />, tecnologia: "MongoDB", bg: "bg-blue-500" },
-        { logo: <SiNeo4J />, tecnologia: "Neo4j", bg: "bg-blue-500" },
-        { logo: <SiElasticsearch />, tecnologia: "Elasticsearch", bg: "bg-blue-500" },
+        { logo: <FaJava />, tecnologia: "Java", bg: "bg-rose-500" },
+        { logo: <SiSpringboot />, tecnologia: "Spring Boot", bg: "bg-rose-500" },
+        { logo: <SiPostgresql />, tecnologia: "PostgreSQL", bg: "bg-rose-500" },
+        { logo: <SiMongodb />, tecnologia: "MongoDB", bg: "bg-rose-500" },
+        { logo: <SiNeo4J />, tecnologia: "Neo4j", bg: "bg-rose-500" },
+        { logo: <SiElasticsearch />, tecnologia: "Elasticsearch", bg: "bg-rose-500" },
     ]
 
     const techswordle = [
-        { logo: <FaReact />, tecnologia: "React", bg: "bg-blue-500" },
-        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-blue-500" },
-        { logo: <FaCss3Alt />, tecnologia: "CSS", bg: "bg-blue-500" },
-        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-blue-500" },
+        { logo: <FaReact />, tecnologia: "React", bg: "bg-rose-500" },
+        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-rose-500" },
+        { logo: <FaCss3Alt />, tecnologia: "CSS", bg: "bg-rose-500" },
+        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-rose-500" },
+    ]
+
+    const techsaccidenta = [
+        { logo: <SiReact />, tecnologia: "React Native", bg: "bg-rose-500" },
+        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-rose-500" },
+        { logo: <FaNodeJs />, tecnologia: "Node.js", bg: "bg-rose-500" },
+        { logo: <SiExpress />, tecnologia: "Express.js", bg: "bg-rose-500" },
+        { logo: <SiTailwindcss />, tecnologia: "Tailwind CSS", bg: "bg-rose-500" },
+        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-rose-500" },
     ]
 
     return (
@@ -61,6 +70,13 @@ const Projects = () => {
                         technologies={techswordle}
                         description="Aplicación web interactiva inspirada en Wordle, que permite jugar con distintos niveles de dificultad, con validaciones en tiempo real, manejo de sesiones y una interfaz responsive."
                         repo="https://github.com/arodriguezfontana/wordle-game"
+                    />
+                    <ProjectCard
+                        image="/wordle_image.png"
+                        title="Accidenta – Aplicación movil para reportes de accidentes"
+                        technologies={techsaccidenta}
+                        description="Aplicación movil para reportar y notificar accidentes en situaciones de emergencia propias o de otro rapidamente por mail."
+                        repo="https://github.com/YoelSLA/app-accidenta"
                     />
                 </Card>
             </section>
