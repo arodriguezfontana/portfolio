@@ -2,47 +2,9 @@ import React from 'react'
 import { CodeXml } from "lucide-react"
 import Card from './Card'
 import ProjectCard from './ProjectCard'
-import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaJava } from "react-icons/fa"
-import { SiTypescript, SiJavascript, SiExpress, SiReact, SiSpringboot, SiPostgresql, SiMongodb, SiNeo4J, SiElasticsearch, SiTailwindcss } from "react-icons/si"
+import { assets } from '@/assets/assets'
 
 const Projects = () => {
-
-    const techsgog = [
-        { logo: <FaReact />, tecnologia: "React", bg: "bg-rose-500" },
-        { logo: <SiReact />, tecnologia: "React Native", bg: "bg-rose-500" },
-        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-rose-500" },
-        { logo: <FaCss3Alt />, tecnologia: "CSS", bg: "bg-rose-500" },
-        { logo: <SiExpress />, tecnologia: "Express.js", bg: "bg-rose-500" },
-        { logo: <FaNodeJs />, tecnologia: "Node.js", bg: "bg-rose-500" },
-        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-rose-500" },
-        { logo: <SiJavascript />, tecnologia: "JavaScript", bg: "bg-rose-500" },
-    ]
-
-    const techsepers = [
-        { logo: <FaJava />, tecnologia: "Java", bg: "bg-rose-500" },
-        { logo: <SiSpringboot />, tecnologia: "Spring Boot", bg: "bg-rose-500" },
-        { logo: <SiPostgresql />, tecnologia: "PostgreSQL", bg: "bg-rose-500" },
-        { logo: <SiMongodb />, tecnologia: "MongoDB", bg: "bg-rose-500" },
-        { logo: <SiNeo4J />, tecnologia: "Neo4j", bg: "bg-rose-500" },
-        { logo: <SiElasticsearch />, tecnologia: "Elasticsearch", bg: "bg-rose-500" },
-    ]
-
-    const techswordle = [
-        { logo: <FaReact />, tecnologia: "React", bg: "bg-rose-500" },
-        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-rose-500" },
-        { logo: <FaCss3Alt />, tecnologia: "CSS", bg: "bg-rose-500" },
-        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-rose-500" },
-    ]
-
-    const techsaccidenta = [
-        { logo: <SiReact />, tecnologia: "React Native", bg: "bg-rose-500" },
-        { logo: <SiTypescript />, tecnologia: "TypeScript", bg: "bg-rose-500" },
-        { logo: <FaNodeJs />, tecnologia: "Node.js", bg: "bg-rose-500" },
-        { logo: <SiExpress />, tecnologia: "Express.js", bg: "bg-rose-500" },
-        { logo: <SiTailwindcss />, tecnologia: "Tailwind CSS", bg: "bg-rose-500" },
-        { logo: <FaHtml5 />, tecnologia: "HTML", bg: "bg-rose-500" },
-    ]
-
     return (
         <>
             <section id='projects'>
@@ -52,31 +14,31 @@ const Projects = () => {
                 >
                     <ProjectCard
                         image="/gog_image.png"
-                        title="GOG - Ecommerce de videojuegos multiplataforma"
-                        technologies={techsgog}
-                        description="Tienda digital de videojuegos inspirada en GOG, que permite a los usuarios comprar, reseñar y gestionar su colección de juegos en versiones web y móvil."
+                        title="E-Commerce Multi-Plataforma de Videojuegos"
+                        technologies={assets.techsgog}
+                        description="Tienda digital de videojuegos fullstack (web y mobile), inspirada en GOG, que permite a los usuarios buscar, comprar y reseñar juegos. Incluye tambien un sistema de amistades."
                         repo="https://github.com/arodriguezfontana/gog-frontend"
                     />
                     <ProjectCard
+                        image="/accidenta_image.jpeg"
+                        title="App Mobile de Reporte de Emergencias"
+                        technologies={assets.techsaccidenta}
+                        description="Aplicación fullstack mobile para reportar rapidamente situaciones de emergencia, con notificaciones automatizadas vía email a contactos de confianza y ubicación del accidente en tiempo real."
+                        repo="https://github.com/YoelSLA/app-accidenta"
+                    />
+                    <ProjectCard
                         image="/epers_image.png"
-                        title="Epersgeist - Sistema de persistencia con múltiples bases de datos"
-                        technologies={techsepers}
-                        description="Aplicación backend dividida en seis etapas, cada una con un enfoque distinto de persistencia de datos. Incorpora múltiples bases de datos, pruebas automatizadas, geolocalización y búsquedas semánticas."
+                        title="Sistema de Persistencia Multi-Bases de Datos"
+                        technologies={assets.techsepers}
+                        description="Backend enfocado en la integración modular y estratégica de múltiples tipos de bases de datos. Incorpora geolocalización y búsquedas semánticas."
                         repo="https://github.com/arodriguezfontana/epersgeist-backend"
                     />
                     <ProjectCard
                         image="/wordle_image.png"
-                        title="Wordle – Juego web interactivo de adivinanza de palabras"
-                        technologies={techswordle}
-                        description="Aplicación web interactiva inspirada en Wordle, que permite jugar con distintos niveles de dificultad, con validaciones en tiempo real, manejo de sesiones y una interfaz responsive."
+                        title="Juego Web Interactivo de Adivinanza de Palabras"
+                        technologies={assets.techswordle}
+                        description="Implementación Frontend de juego de adivinanza de palabras, inspirado en Wordle, que permite jugar con distintos niveles de dificultad, validaciones en tiempo real, manejo de sesiones y una interfaz responsive."
                         repo="https://github.com/arodriguezfontana/wordle-game"
-                    />
-                    <ProjectCard
-                        image="/wordle_image.png"
-                        title="Accidenta – Aplicación movil para reportes de accidentes"
-                        technologies={techsaccidenta}
-                        description="Aplicación movil para reportar y notificar accidentes en situaciones de emergencia propias o de otro rapidamente por mail."
-                        repo="https://github.com/YoelSLA/app-accidenta"
                     />
                 </Card>
             </section>
