@@ -1,14 +1,27 @@
 import React from 'react'
-import { Briefcase } from "lucide-react"
+import { Briefcase, CodeXml, UserRound } from "lucide-react"
+import Card from './Card'
+import ExperienceCard from './ExperienceCard'
 
 const Experience = () => {
     return (
         <>
-            <div className='flex items-center gap-3 text-2xl font-[500]'>
-                <Briefcase size={35} className="text-blak-600" />
-                <h4>Experiencia Laboral</h4>
-            </div>
-            
+            <section id='experience'>
+                <Card
+                    icon={<Briefcase size={35} className="text-blak-600" />}
+                    title="Experiencia laboral"
+                >
+                    <ExperienceCard
+                        role="Fullstack Developer"
+                        company="Freelance"
+                        date="Septiembre 2024 - Actualidad"
+                        description="Desarrollo de proyectos personales y colaborativos 
+                    enfocados en resolver necesidades reales, implementando múltiples tecnologías
+                    y bases de datos para entregar soluciones completas, funcionales y con calidad.
+                    "
+                    />
+                </Card>
+            </section>
         </>
     )
 }
