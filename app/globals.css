@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+    font-family: var(--font-poppins), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
