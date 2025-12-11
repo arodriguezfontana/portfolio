@@ -24,7 +24,7 @@ const Projects = () => {
                         title="App Mobile de Reporte de Emergencias"
                         technologies={assets.techsaccidenta}
                         description="Aplicación fullstack mobile para reportar rapidamente situaciones de emergencia, con notificaciones automatizadas vía email a contactos de confianza y ubicación del accidente en tiempo real."
-                        repo="https://github.com/YoelSLA/app-accidenta"
+                        repo="https://github.com/arodriguezfontana/accidenta-fullstack"
                     />
                     <ProjectCard
                         image="/epers_image.png"

@@ -50,7 +50,7 @@ const Header = () => {
           Especializada en{" "}
           <span className="text-rose-500 font-medium">Frontend</span> y{" "}
           <span className="text-rose-500 font-medium">Backend</span>, y en constante
-          aprendizaje de nuevas tecnologías.
+          aprendizaje de nuevas tecnologías y areas, principalmente en <span className="text-rose-500 font-medium">Cienca de Datos</span>.
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start mt-5 gap-3 font-medium">
