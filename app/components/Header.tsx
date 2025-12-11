@@ -3,8 +3,11 @@ import Image from 'next/image'
 import { assets } from '@/assets/assets'
 import Button from './Button'
 import { Download, Mail, UserRoundSearch, CodeXml } from 'lucide-react'
+import { useLanguage } from '../context/LenguageContext'
 
 const Header = () => {
+  const { t } = useLanguage();
+
   const goToLinkedIn = () => {
     window.open("https://www.linkedin.com/in/rodriguezfontana/", "_blank");
   };
@@ -36,21 +39,21 @@ const Header = () => {
           onClick={goToLinkedIn}
           className="bg-green-500 text-white font-medium hover:bg-green-700 transition-all duration-200"
         >
-          Disponible para trabajar
+          {t('header_available')}
         </Button>
       </div>
 
       <div className="max-w-2xl">
         <h2 className="text-4xl sm:text-5xl font-bold mt-5 md:mt-1">
-          Hola, soy <span className="text-rose-500">Abril</span>
+          {t('header_hi')} <span className="text-rose-500">Abril</span>
         </h2>
         <p className="mt-3 text-base sm:text-lg text-gray-700">
-          Con más de 4 años de estudio, próxima{" "}
-          <span className="text-rose-500 font-medium">Licenciada en Informática</span>.
-          Especializada en{" "}
-          <span className="text-rose-500 font-medium">Frontend</span> y{" "}
-          <span className="text-rose-500 font-medium">Backend</span>, y en constante
-          aprendizaje de nuevas tecnologías y areas, principalmente en <span className="text-rose-500 font-medium">Cienca de Datos</span>.
+          {t('header_description_1')}
+          <span className="text-rose-500 font-medium">{t('header_description_2')}</span>
+          {t('header_description_3')}
+          <span className="text-rose-500 font-medium">{t('header_description_4')}</span>
+          {t('header_description_5')}
+          <span className="text-rose-500 font-medium">{t('header_description_6')}</span>
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start mt-5 gap-3 font-medium">
@@ -59,7 +62,7 @@ const Header = () => {
             className="border border-black hover:bg-black hover:text-white"
             icon={<Mail size={18} />}
           >
-            Contactame
+            {t('header_contact_btn')}
           </Button>
           <Button
             onClick={goToLinkedIn}
@@ -80,7 +83,7 @@ const Header = () => {
             className="bg-rose-500 text-white hover:bg-rose-700"
             icon={<Download size={18} />}
           >
-            Descargar CV
+            {t('header_download_cv_btn')}
           </Button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import Image from 'next/image'
 import { MoveRight } from 'lucide-react'
+import { useLanguage } from '../context/LenguageContext'
 
 type Technology = {
   logo: ReactNode
@@ -17,6 +18,8 @@ type ProjectCardProps = {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, description, repo }) => {
+  const { t } = useLanguage()
+
   return (
     <article
       className="
@@ -68,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, d
             hover:text-rose-600 transition-all duration-200
           "
         >
-          Ver Repositorio
+          {t('proj_repo_link')}
           <MoveRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />
         </a>
       </div>

@@ -3,41 +3,44 @@ import { CodeXml } from "lucide-react"
 import Card from './Card'
 import ProjectCard from './ProjectCard'
 import { assets } from '@/assets/assets'
+import { useLanguage } from '../context/LenguageContext'
 
 const Projects = () => {
+    const { t } = useLanguage()
+
     return (
         <>
             <section id='projects'>
                 <Card
                     icon={<CodeXml size={35} className="text-blak-600" />}
-                    title="Proyectos"
+                    title={t('proj_title')}
                 >
                     <ProjectCard
                         image="/gog_image.png"
-                        title="E-Commerce Multi-Plataforma de Videojuegos"
+                        title={t('proj_gog_title')}
                         technologies={assets.techsgog}
-                        description="Tienda digital de videojuegos fullstack (web y mobile), inspirada en GOG, que permite a los usuarios buscar, comprar y reseñar juegos. Incluye tambien un sistema de amistades."
+                        description={t('proj_gog_desc')}
                         repo="https://github.com/arodriguezfontana/gog-frontend"
                     />
                     <ProjectCard
                         image="/accidenta_image.jpeg"
-                        title="App Mobile de Reporte de Emergencias"
+                        title={t('proj_accidenta_title')}
                         technologies={assets.techsaccidenta}
-                        description="Aplicación fullstack mobile para reportar rapidamente situaciones de emergencia, con notificaciones automatizadas vía email a contactos de confianza y ubicación del accidente en tiempo real."
+                        description={t('proj_accidenta_desc')}
                         repo="https://github.com/arodriguezfontana/accidenta-fullstack"
                     />
                     <ProjectCard
                         image="/epers_image.png"
-                        title="Sistema de Persistencia Multi-Bases de Datos"
+                        title={t('proj_epers_title')}
                         technologies={assets.techsepers}
-                        description="Backend enfocado en la integración modular y estratégica de múltiples tipos de bases de datos. Incorpora geolocalización y búsquedas semánticas."
+                        description={t('proj_epers_desc')}
                         repo="https://github.com/arodriguezfontana/epersgeist-backend"
                     />
                     <ProjectCard
                         image="/wordle_image.png"
-                        title="Juego Web Interactivo de Adivinanza de Palabras"
+                        title={t('proj_wordle_title')}
                         technologies={assets.techswordle}
-                        description="Implementación Frontend de juego de adivinanza de palabras, inspirado en Wordle, que permite jugar con distintos niveles de dificultad, validaciones en tiempo real, manejo de sesiones y una interfaz responsive."
+                        description={t('proj_wordle_desc')}
                         repo="https://github.com/arodriguezfontana/wordle-game"
                     />
                 </Card>
