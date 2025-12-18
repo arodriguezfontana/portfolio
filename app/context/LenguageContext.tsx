@@ -39,8 +39,8 @@ const translations = {
         'en': 'Full Stack ' 
     },
     'header_description_5': { 
-        'es': ', y estoy constantemente ampliando mis conocimientos en nuevas tecnologías, con un enfoque actual en el campo de la ', 
-        'en': 'development, I am committed to continuous learning and expanding my expertise in new technologies, with a current focus on the field of ' 
+        'es': ', y estoy constantemente ampliando mis conocimientos en nuevas tecnologías, con un enfoque actual en ', 
+        'en': 'development, I am committed to continuous learning and expanding my expertise in new technologies, with a current focus on ' 
     },
     'header_description_6': { 
         'es': 'Cienca de Datos.', 
@@ -50,8 +50,8 @@ const translations = {
     'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
     'exp_date_freelance': { 'es': 'Marzo 2025 - Actualidad', 'en': 'March 2025 - Present' },
     'exp_desc_freelance': { 
-        'es': 'Me encargué del diseño de arquitectura, desarrollo y entrega de soluciones Full Stack complejas y escalables, manteniendo siempre un fuerte enfoque en la calidad del código y la resolución efectiva de necesidades reales. Además, participé activamente en la gestión de proyectos, la toma de decisiones técnicas y el liderazgo dentro de equipos ágiles y colaborativos', 
-        'en': 'Led the architectural design, development, and delivery of complex and scalable Full Stack solutions, maintaining a strong focus on code quality and the effective resolution of real-world needs. I also contributed to project management, technical decision-making, and leadership within agile and collaborative teams.' 
+        'es': 'Me encargué del diseño, desarrollo y entrega de soluciones Full Stack, manteniendo un fuerte enfoque en la calidad del código y la resolución efectiva de necesidades. Además, participé activamente en la gestión de proyectos, toma de decisiones técnicas y liderazgo dentro de equipos ágiles y colaborativos.', 
+        'en': 'Led the design, development, and delivery of Full Stack solutions, maintaining a strong focus on code quality and the effective resolution of needs. I also contributed to project management, technical decision-making, and leadership within agile and collaborative teams.' 
     },
     
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
@@ -71,8 +71,8 @@ const translations = {
     
     'about_title': { 'es': 'Sobre mí', 'en': 'About me' },
     'about_1': { 'es': 'Me llamo Abril. Desde pequeña ', 'en': 'My name is Abril. My ' },
-    'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'passion for technology' },
-    'about_3': { 'es': 'y, al crecer, decidí empezar con la programación.', 'en':'started when I was young, which led me to begin a career in programming.' },
+    'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'passion for technology ' },
+    'about_3': { 'es': 'y, al crecer, decidí empezar con la programación. ', 'en':'started when I was young, which led me to begin a career in programming. ' },
     
     'about_4': { 'es': 'Mi objetivo es ', 'en': 'My goal is to ' },
     'about_5': { 'es': 'acercar la tecnología a todas las personas ', 'en': 'bring technology closer to all people ' },

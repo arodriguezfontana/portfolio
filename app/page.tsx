@@ -22,3 +22,4 @@ export default function Home() {
     </main>
   );
 }
+// 1022 x 953 a 766 x 953

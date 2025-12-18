@@ -18,9 +18,6 @@ const About = () => {
               {t('about_1')}
               <span className="text-rose-500 font-medium">{t('about_2')}</span>
               {t('about_3')}
-            </p>
-
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
               {t('about_4')}
               <span className="text-rose-500 font-medium">{t('about_5')}</span>
               {t('about_6')}
