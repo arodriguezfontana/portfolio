@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className=" bg-gray-50">
+    <main className=" bg-gray-50 min-h-screen">
       <Navbar />
       <Header />
       <div className="w-full flex justify-center">
@@ -22,3 +22,4 @@ export default function Home() {
     </main>
   );
 }
+// 1022 x 953 a 766 x 953

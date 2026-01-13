@@ -7,7 +7,7 @@ import { Sun, Moon } from 'lucide-react'
 const Navbar = () => {
   const [show, setShow] = useState(false)
   const { isDark, toggleDarkMode } = useDarkMode()
-  const { language, toggleLanguage } = useLanguage()
+  const { language, toggleLanguage, t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +20,11 @@ const Navbar = () => {
   }, [])
 
   const links = [
-    { href: "#top", label: "Intro" },
-    { href: "#experience", label: "Experiencia" },
-    { href: "#projects", label: "Proyectos" },
-    { href: "#about", label: "Sobre mí" },
-    { href: "mailto:arodriguezfontana@gmail.com", label: "Contacto" },
+    { href: "#top", label: "nav_intro" },
+    { href: "#experience", label: "nav_experience" },
+    { href: "#projects", label: "nav_projects" },
+    { href: "#about", label: "nav_about" },
+    { href: "mailto:arodriguezfontana@gmail.com", label: "nav_contact" },
   ]
 
   return (
@@ -40,7 +40,7 @@ const Navbar = () => {
               href={href}
               className="text-gray-800 hover:text-rose-600 transition-colors font-[500]"
             >
-              {label}
+              {t(label)}
             </a>
           </li>
         ))}
