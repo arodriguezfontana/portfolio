@@ -37,7 +37,9 @@ const Navbar = () => {
           <li key={href} className="flex items-center">
             <a
               href={href}
-              className={`dark:text-gray-200 text-gray-800 hover:text-rose-600 transition-colors font-[500] ${show ? "dark:text-gray-800" : ""}`}
+              className={`dark:text-gray-200 text-gray-800 hover:text-rose-600 transition-colors font-[500] 
+    whitespace-nowrap text-[12px] xs:text-sm sm:text-base 
+    ${show ? "dark:text-gray-800" : ""}`}
             >
               {t(label)}
             </a>
