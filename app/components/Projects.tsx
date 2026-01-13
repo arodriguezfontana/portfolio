@@ -16,28 +16,28 @@ const Projects = () => {
                     title={t('proj_title')}
                 >
                     <ProjectCard
-                        image="/gog_image.png"
+                        image="/portfolio/gog_image.png"
                         title={t('proj_gog_title')}
                         technologies={assets.techsgog}
                         description={t('proj_gog_desc')}
                         repo="https://github.com/arodriguezfontana/gog-frontend"
                     />
                     <ProjectCard
-                        image="/accidenta_image.jpeg"
+                        image="/portfolio/accidenta_image.jpeg"
                         title={t('proj_accidenta_title')}
                         technologies={assets.techsaccidenta}
                         description={t('proj_accidenta_desc')}
                         repo="https://github.com/arodriguezfontana/accidenta-fullstack"
                     />
                     <ProjectCard
-                        image="/epers_image.png"
+                        image="/portfolio/epers_image.png"
                         title={t('proj_epers_title')}
                         technologies={assets.techsepers}
                         description={t('proj_epers_desc')}
                         repo="https://github.com/arodriguezfontana/epersgeist-backend"
                     />
                     <ProjectCard
-                        image="/wordle_image.png"
+                        image="/portfolio/wordle_image.png"
                         title={t('proj_wordle_title')}
                         technologies={assets.techswordle}
                         description={t('proj_wordle_desc')}

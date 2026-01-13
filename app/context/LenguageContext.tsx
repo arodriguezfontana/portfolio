@@ -16,7 +16,6 @@ const translations = {
     'nav_experience': { 'es': 'Experiencia', 'en': 'Experience' },
     'nav_projects': { 'es': 'Proyectos', 'en': 'Projects' },
     'nav_about': { 'es': 'Sobre mí', 'en': 'About me' },
-    'nav_contact': { 'es': 'Contacto', 'en': 'Contact' },
     
     // Header
     'header_available': { 'es': 'Disponible para trabajar', 'en': 'Available for work' },

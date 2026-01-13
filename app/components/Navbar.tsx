@@ -24,7 +24,6 @@ const Navbar = () => {
     { href: "#experience", label: "nav_experience" },
     { href: "#projects", label: "nav_projects" },
     { href: "#about", label: "nav_about" },
-    { href: "mailto:arodriguezfontana@gmail.com", label: "nav_contact" },
   ]
 
   return (
