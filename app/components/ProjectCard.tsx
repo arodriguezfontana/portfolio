@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, d
       </div>
 
       <div className="w-full lg:w-3/5 text-left">
-        <h3 className="mb-2 text-2xl font-bold text-gray-900">{title}</h3>
+        <h3 className="dark:text-gray-300 mb-2 text-2xl font-bold text-gray-900">{title}</h3>
 
         <div className="mb-3 flex flex-wrap gap-2">
           {technologies.map((tech, i) => (
