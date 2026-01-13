@@ -13,7 +13,7 @@ const Footer = () => {
           className="hover:underline text-rose-500"
         >
           {t('footer_contact_link')}
-        </a>
+        </a> 
       </div>
     </footer>
   )
