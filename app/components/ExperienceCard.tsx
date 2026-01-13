@@ -15,7 +15,7 @@ const ExperienceCard = ({ role, company, date, description }: ExperienceCardProp
       <div className="flex flex-col max-w-2xl">
         <h5 className="text-rose-500 font-semibold text-xl">{role}</h5>
         <p className="dark:text-gray-200 text-gray-800 font-medium text-lg">{company}</p>
-        <p className="text-sm text-gray-300 mb-3">{date}</p>
+        <p className="text-sm text-gray-500 mb-3">{date}</p>
         <p className="dark:text-gray-400 text-gray-700 text-base leading-relaxed">{description}</p>
       </div>
     </div>

@@ -22,9 +22,11 @@ const Header = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/abril_cv.pdf";
-    link.download = "abril_cv.pdf";
+    link.href = "/abril_rodriguez_cv.pdf";
+    link.download = "abril_rodriguez_cv.pdf";
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -44,10 +46,10 @@ const Header = () => {
       </div>
 
       <div className="max-w-2xl">
-        <h2 className="dark:text-gray-200  text-4xl sm:text-5xl font-bold mt-5 md:mt-1">
+        <h2 className="dark:text-gray-200 m-3 text-4xl sm:text-5xl font-bold mt-5 md:mt-1">
           {t('header_hi')} <span className="text-rose-500">Abril</span>
         </h2>
-        <p className="dark:text-gray-400 mt-3 text-base sm:text-lg text-gray-700">
+        <p className="dark:text-gray-400 mt-3 text-base sm:text-lg text-gray-700 m-3">
           {t('header_description_1')}
           <span className="text-rose-500 font-medium">{t('header_description_2')}</span>
           {t('header_description_3')}
