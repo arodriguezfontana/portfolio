@@ -38,7 +38,7 @@ const Navbar = () => {
           <li key={href} className="flex items-center">
             <a
               href={href}
-              className="text-gray-800 hover:text-rose-600 transition-colors font-[500]"
+              className={`dark:text-gray-200 text-gray-800 hover:text-rose-600 transition-colors font-[500] ${show ? "dark:text-gray-800" : ""}`}
             >
               {t(label)}
             </a>
@@ -60,9 +60,9 @@ const Navbar = () => {
             className="flex items-center justify-center"
           >
             {isDark ? (
-              <Sun size={18} className="text-rose-500 hover:text-rose-700" />
+              <Sun size={18} className="dark:text-rose-700 dark:hover:text-rose-500 text-rose-500 hover:text-rose-700" />
             ) : (
-              <Moon size={18} className="text-rose-500 hover:text-rose-700" />
+              <Moon size={18} className="dark:text-rose-700 dark:hover:text-rose-500 text-rose-500 hover:text-rose-700" />
             )}
           </button>
         </li>

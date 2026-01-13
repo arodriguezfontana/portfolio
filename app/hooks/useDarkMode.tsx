@@ -1,31 +1,27 @@
-'use client';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useDarkMode = () => {
-    const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const initialDark = savedTheme === 'dark' || (savedTheme === null && prefersDark);
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setIsDark(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
 
-        setIsDark(initialDark);
-    }, []);
+  const toggleDarkMode = () => {
+    if (isDark) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+      setIsDark(false);
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      setIsDark(true);
+    }
+  };
 
-    useEffect(() => {
-        if (isDark) {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            // Remover clase del DOM y guardar preferencia
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-        }
-    }, [isDark]); 
-
-    const toggleDarkMode = () => {
-        setIsDark(prevIsDark => !prevIsDark);
-    };
-
-    return { isDark, toggleDarkMode };
+  return { isDark, toggleDarkMode };
 };
