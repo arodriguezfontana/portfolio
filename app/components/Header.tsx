@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <header className="pt-35 pb-20 flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-16 text-center md:text-left">
+    <header className="pt-35 pb-20 sm:pb-14 flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-16 text-center md:text-left">
       <div className="flex flex-col items-center gap-3">
         <Image
           className="rounded-full w-32 md:w-40"
