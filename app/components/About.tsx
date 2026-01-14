@@ -14,7 +14,7 @@ const About = () => {
           title={t('about_title')}
         >
           <div className="max-w-3xl">
-            <p className="dark:text-gray-400 text-lg text-gray-700 mb-4 leading-relaxed">
+            <p className="dark:text-gray-400 text-lg text-gray-700 mb-4 sm:text-lg  leading-relaxed">
               {t('about_1')}
               <span className="text-rose-500 font-medium">{t('about_2')}</span>
               {t('about_3')}
