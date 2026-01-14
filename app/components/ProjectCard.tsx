@@ -44,13 +44,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, d
       </div>
 
       <div className="w-full lg:w-3/5 text-left">
-        <h3 className="mb-2 text-2xl font-bold text-gray-900">{title}</h3>
+        <h3 className="dark:text-gray-300 mb-2 text-2xl font-bold text-gray-900">{title}</h3>
 
         <div className="mb-3 flex flex-wrap gap-2">
           {technologies.map((tech, i) => (
             <span
               key={i}
-              className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-white text-xs font-medium ${tech.bg}`}
+              className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-white text-xs font-medium bg-rose-500 dark:bg-rose-700`}
             >
               {tech.logo}
               {tech.tecnologia}
@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, d
           ))}
         </div>
 
-        <p className="mb-4 text-base text-gray-700 leading-relaxed">
+        <p className="dark:text-gray-400 mb-4 text-base text-gray-700 leading-relaxed">
           {description}
         </p>
 

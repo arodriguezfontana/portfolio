@@ -24,7 +24,6 @@ const Navbar = () => {
     { href: "#experience", label: "nav_experience" },
     { href: "#projects", label: "nav_projects" },
     { href: "#about", label: "nav_about" },
-    { href: "mailto:arodriguezfontana@gmail.com", label: "nav_contact" },
   ]
 
   return (
@@ -38,7 +37,9 @@ const Navbar = () => {
           <li key={href} className="flex items-center">
             <a
               href={href}
-              className="text-gray-800 hover:text-rose-600 transition-colors font-[500]"
+              className={`dark:text-gray-200 text-gray-800 hover:text-rose-600 transition-colors font-[500] 
+    whitespace-nowrap text-[12px] xs:text-sm sm:text-base 
+    ${show ? "dark:text-gray-800" : ""}`}
             >
               {t(label)}
             </a>
@@ -60,9 +61,9 @@ const Navbar = () => {
             className="flex items-center justify-center"
           >
             {isDark ? (
-              <Sun size={18} className="text-rose-500 hover:text-rose-700" />
+              <Sun size={18} className="dark:text-rose-700 dark:hover:text-rose-500 text-rose-500 hover:text-rose-700" />
             ) : (
-              <Moon size={18} className="text-rose-500 hover:text-rose-700" />
+              <Moon size={18} className="dark:text-rose-700 dark:hover:text-rose-500 text-rose-500 hover:text-rose-700" />
             )}
           </button>
         </li>
