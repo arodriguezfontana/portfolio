@@ -32,11 +32,11 @@ const translations = {
     
     // Experiencia
     'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
-    'exp_date_freelance': { 'es': 'Ene. 2024 - Ago. 2025', 'en': 'Jan. 2024 - Aug. 2025' },
+    'exp_date_freelance': { 'es': 'Ene. 2024 - May. 2025', 'en': 'Jan. 2024 - May. 2025' },
     'exp_desc_freelance': { 'es': 'Desarrollé microservicios bajo arquitecturas de capas para asegurar código escalable y testeable, optimizando consultas a bases de datos para mejorar el rendimiento en módulos de alta demanda. Implementé interfaces con Hooks y Responsive Design, encargándome de la integración de APIs RESTful y el manejo de estados complejos para garantizar una experiencia de usuario fluida.', 'en': 'I developed microservices using layered architectures to ensure scalable and testable code, optimizing database queries to enhance performance in high-demand modules and implemented interfaces with Hooks and Responsive Design, managing RESTful API integrations and complex state management to guarantee a seamless user experience.' },
-    // 'exp2_role': {'es':'Ayudante de Cátedra', 'en': 'Teaching Assistant'},
-    // 'exp2_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Ago. 2024 - Present' },
-    // 'exp2_desc_freelance': { 'es': 'Dicté clases y supervisé entregas para la materia Estrategias de Persistencia profundizando en el modelado y gestión de datos en motores SQL y NoSQL.', 'en': 'Lectured and supervised student projects for the Persistence Strategies course, focusing on data modeling and management in SQL and NoSQL engines.' },
+    'exp2_role': {'es':'Ayudante de Cátedra', 'en': 'Teaching Assistant'},
+    'exp2_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Ago. 2024 - Present' },
+    'exp2_desc_freelance': { 'es': 'Dicté clases y supervisé entregas para la materia Estrategias de Persistencia profundizando en el modelado y gestión de datos en motores SQL y NoSQL.', 'en': 'Lectured and supervised student projects for the Persistence Strategies course, focusing on data modeling and management in SQL and NoSQL engines.' },
     
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },

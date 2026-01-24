@@ -23,7 +23,7 @@ const Header = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = "/abril_rodriguez_cv.pdf";
-    link.download = "abril_rodriguez_cv.pdf";
+    link.download = "Abril Rodriguez CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
