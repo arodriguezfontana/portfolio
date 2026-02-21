@@ -15,7 +15,7 @@ const Experience = () => {
                     title={t('exp_title')}
                 >
                     <ExperienceCard
-                        role="Software Engineer"
+                        role="Software Developer"
                         company="Freelance"
                         date={t('exp_date_freelance')}
                         description={t('exp_desc_freelance')}
