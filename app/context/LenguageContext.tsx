@@ -55,7 +55,6 @@ const translations = {
     'about_1': { 'es': 'Me llamo Abril. Desde pequeña ', 'en': 'My name is Abril. My ' },
     'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'passion for technology ' },
     'about_3': { 'es': 'y, al crecer, decidí empezar con la programación. ', 'en':'started when I was young, which led me to begin a career in programming. ' },
-    
     'about_4': { 'es': 'Mi objetivo es ', 'en': 'My goal is to ' },
     'about_5': { 'es': 'acercar la tecnología a todas las personas ', 'en': 'bring technology closer to all people ' },
     'about_6': { 'es': 'creando soluciones que resuelvan problemas y mejoren situaciones de la vida diaria.', 'en': 'by creating solutions that solve problems and improve daily life situations.' },
