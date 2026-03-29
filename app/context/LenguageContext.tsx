@@ -26,17 +26,29 @@ const translations = {
     'header_description_1': { 'es': 'Estudiante avanzada de la ', 'en': 'Advanced student of ' },
     'header_description_2': { 'es': 'Licenciatura en Informática ', 'en': 'B.S. in Computer Science ' },
     'header_description_3': { 'es': 'con más de 2 años de experiencia en  ', 'en': 'with over 2 years of experience in  ' },
-    'header_description_4': { 'es': 'Desarrollo Fullstack. ', 'en': 'Fullstack Development. ' },
+    'header_description_4': { 'es': 'Desarrollo Full Stack. ', 'en': 'Full Stack Development. ' },
     'header_description_5': { 'es': 'Actualmente profundizando en ', 'en': 'Currently deepening my expertise in ' },
     'header_description_6': { 'es': 'Ciencia de Datos.', 'en': 'Data Science.' },
     
     // Experiencia
     'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
-    'exp_date_freelance': { 'es': 'Jun. 2024 - Nov. 2025', 'en': 'Jun. 2024 - Nov. 2025' },
-    'exp_desc_freelance': { 'es': 'Desarrollé microservicios bajo arquitecturas de capas para asegurar código escalable y testeable, optimizando consultas a bases de datos para mejorar el rendimiento en módulos de alta demanda. Implementé interfaces con Hooks y Responsive Design, encargándome de la integración de APIs RESTful y el manejo de estados complejos para garantizar una experiencia de usuario fluida.', 'en': 'I developed microservices using layered architectures to ensure scalable and testable code, optimizing database queries to enhance performance in high-demand modules. Implemented interfaces with Hooks and Responsive Design, managing RESTful API integrations and complex state management to guarantee a seamless user experience.' },
-    'exp2_role': {'es':'Ayudante de Cátedra', 'en': 'Teaching Assistant'},
-    'exp2_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Aug. 2024 - Present' },
-    'exp2_desc_freelance': { 'es': 'Dicté clases y supervisé entregas para la materia Estrategias de Persistencia profundizando en el modelado y gestión de datos en motores SQL y NoSQL.', 'en': 'Lectured and supervised student projects for the Persistence Strategies course, focusing on data modeling and management in SQL and NoSQL engines.' },
+    'exp_date_freelance': { 'es': 'Mar. 2024 - Actualidad', 'en': 'Mar. 2024 - Present' },
+    'exp_desc_freelance': { 
+    'es': 'Lidero el desarrollo de funcionalidades bajo Clean Architecture y microservicios para asegurar sistemas desacoplados, testeables y escalables. Optimizo consultas a bases de datos en módulos de alta demanda y diseño interfaces responsivas con Hooks, garantizando la integridad de los datos y una experiencia de usuario fluida.', 
+    'en': 'Lead the development of functionalities under Clean Architecture and microservices to ensure decoupled, testable, and scalable systems. Optimize database queries in high-demand modules and design responsive interfaces with Hooks, ensuring data integrity and a seamless user experience.' 
+},
+'exp2_role': {
+    'es': 'Ayudante de Cátedra', 
+    'en': 'Teaching Assistant'
+},
+'exp2_date_freelance': { 
+    'es': 'Ago. 2024 - Actualidad', 
+    'en': 'Aug. 2024 - Present' 
+},
+'exp2_desc_freelance': { 
+    'es': 'Dicto clases y superviso entregas para la materia Estrategias de Persistencia, orientando en la selección estratégica de motores SQL y NoSQL según el caso de uso.', 
+    'en': 'Lecture and supervise student projects for the Persistence Strategies course, providing guidance on the strategic selection of SQL and NoSQL engines based on the use case.' 
+},
     
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
