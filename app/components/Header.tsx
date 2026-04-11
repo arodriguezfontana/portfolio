@@ -22,11 +22,11 @@ const Header = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/abril_rodriguez_cv.pdf";
-    link.setAttribute("download", "AbrilRodriguezCV.pdf");
+    link.href = "abril_rodriguez_cv.pdf";
+    link.download = "AbrilRodriguezCV.pdf";
     document.body.appendChild(link);
     link.click();
-    link.remove();
+    document.body.removeChild(link);
   };
 
   return (
