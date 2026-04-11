@@ -23,7 +23,7 @@ const Header = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = "/abril_rodriguez_cv.pdf";
-    link.download = "Abril Rodriguez CV.pdf";
+    link.download = "AbrilRodriguezCV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -33,7 +33,7 @@ const Header = () => {
     <header className="text-black sm:pb-14  pt-35 pb-20 flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-16 text-center md:text-left">
       <div className="flex flex-col items-center gap-3">
         <Image
-          className="rounded-full w-32 md:w-40"
+          className="rounded-full w-32 md:w-40" 
           src={assets.abril_image}
           alt="Imagen de Abril Rodríguez"
         />
