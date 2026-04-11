@@ -32,7 +32,7 @@ const translations = {
     
     // Experiencia
     'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
-    'exp_date_freelance': { 'es': 'Mar. 2024 - Actualidad', 'en': 'Mar. 2024 - Present' },
+    'exp_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Aug. 2024 - Present' },
     'exp_desc_freelance': { 
     'es': 'Lidero el desarrollo de funcionalidades bajo Clean Architecture y microservicios para asegurar sistemas desacoplados, testeables y escalables. Optimizo consultas a bases de datos en módulos de alta demanda y diseño interfaces responsivas con Hooks, garantizando la integridad de los datos y una experiencia de usuario fluida.', 
     'en': 'Lead the development of functionalities under Clean Architecture and microservices to ensure decoupled, testable, and scalable systems. Optimize database queries in high-demand modules and design responsive interfaces with Hooks, ensuring data integrity and a seamless user experience.' 
@@ -42,8 +42,8 @@ const translations = {
     'en': 'Teaching Assistant'
 },
 'exp2_date_freelance': { 
-    'es': 'Ago. 2024 - Actualidad', 
-    'en': 'Aug. 2024 - Present' 
+    'es': 'Mar. 2025 - Actualidad', 
+    'en': 'Mar. 2025 - Present' 
 },
 'exp2_desc_freelance': { 
     'es': 'Dicto clases y superviso entregas para la materia Estrategias de Persistencia, orientando en la selección estratégica de motores SQL y NoSQL según el caso de uso.', 
