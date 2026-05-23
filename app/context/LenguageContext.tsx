@@ -39,7 +39,7 @@ const translations = {
     'exp2_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
     'exp2_desc_freelance': { 'es': 'Dicto clases y superviso entregas para la materia Estrategias de Persistencia, orientando en la selección estratégica de motores SQL y NoSQL según el caso de uso.', 'en': 'Lecture and supervise student projects for the Persistence Strategies course, providing guidance on the strategic selection of SQL and NoSQL engines based on the use case.' },
     
-    'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
+    'exp3_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
     'exp3_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
     'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de trabajos para alumnos de 4to, 5to y 6to grado, orientando en herramientas digitales y programación y lógica básica.', 'en': 'Lecture and supervise student projects for 4th, 5th and 6th grade students, providing guidance on digital tools and basic programming and logic.' },
     
