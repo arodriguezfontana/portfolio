@@ -16,10 +16,10 @@ const About = () => {
           <div className="max-w-3xl">
             <p className="dark:text-gray-400 text-lg text-gray-700 mb-4 sm:text-lg  leading-relaxed">
               {t('about_1')}
-              <span className="text-rose-500 font-medium">{t('about_2')}</span>
+              <span className="text-cyan-500 font-medium">{t('about_2')}</span>
               {t('about_3')}
               {t('about_4')}
-              <span className="text-rose-500 font-medium">{t('about_5')}</span>
+              <span className="text-cyan-500 font-medium">{t('about_5')}</span>
               {t('about_6')}
             </p>
           </div>

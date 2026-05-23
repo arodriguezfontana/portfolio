@@ -16,6 +16,13 @@ const Projects = () => {
                     title={t('proj_title')}
                 >
                     <ProjectCard
+                        image="/portfolio/despegar_image.png"
+                        title={t('proj_despegar_title')}
+                        technologies={assets.techsdespegar}
+                        description={t('proj_despegar_desc')}
+                        repo="https://github.com/arodriguezfontana/despegar-contingency-management"
+                    />
+                    <ProjectCard
                         image="/portfolio/gog_image.png"
                         title={t('proj_gog_title')}
                         technologies={assets.techsgog}

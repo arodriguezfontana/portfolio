@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="dark:text-gray-400 mb-2 md:mb-0">© 2025 arodriguezfontana. {t('footer_copyright')}</p>
         <a
           href="mailto:arodriguezfontana@gmail.com"
-          className="hover:underline text-rose-500"
+          className="hover:underline text-cyan-500"
         >
           {t('footer_contact_link')}
         </a> 

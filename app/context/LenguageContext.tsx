@@ -31,24 +31,17 @@ const translations = {
     'header_description_6': { 'es': 'Ciencia de Datos.', 'en': 'Data Science.' },
     
     // Experiencia
-    'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
-    'exp_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Aug. 2024 - Present' },
-    'exp_desc_freelance': { 
-    'es': 'Lidero el desarrollo de funcionalidades bajo Clean Architecture y microservicios para asegurar sistemas desacoplados, testeables y escalables. Optimizo consultas a bases de datos en módulos de alta demanda y diseño interfaces responsivas con Hooks, garantizando la integridad de los datos y una experiencia de usuario fluida.', 
-    'en': 'Lead the development of functionalities under Clean Architecture and microservices to ensure decoupled, testable, and scalable systems. Optimize database queries in high-demand modules and design responsive interfaces with Hooks, ensuring data integrity and a seamless user experience.' 
-},
-'exp2_role': {
-    'es': 'Ayudante de Cátedra', 
-    'en': 'Teaching Assistant'
-},
-'exp2_date_freelance': { 
-    'es': 'Mar. 2025 - Actualidad', 
-    'en': 'Mar. 2025 - Present' 
-},
-'exp2_desc_freelance': { 
-    'es': 'Dicto clases y superviso entregas para la materia Estrategias de Persistencia, orientando en la selección estratégica de motores SQL y NoSQL según el caso de uso.', 
-    'en': 'Lecture and supervise student projects for the Persistence Strategies course, providing guidance on the strategic selection of SQL and NoSQL engines based on the use case.' 
-},
+    //'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
+    //'exp_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Aug. 2024 - Present' },
+    //'exp_desc_freelance': { 'es': 'Lidero el desarrollo de funcionalidades bajo Clean Architecture y microservicios para asegurar sistemas desacoplados, testeables y escalables. Optimizo consultas a bases de datos en módulos de alta demanda y diseño interfaces responsivas con Hooks, garantizando la integridad de los datos y una experiencia de usuario fluida.', 'en': 'Lead the development of functionalities under Clean Architecture and microservices to ensure decoupled, testable, and scalable systems. Optimize database queries in high-demand modules and design responsive interfaces with Hooks, ensuring data integrity and a seamless user experience.' },
+
+    'exp2_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
+    'exp2_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
+    'exp2_desc_freelance': { 'es': 'Dicto clases y superviso entregas para la materia Estrategias de Persistencia, orientando en la selección estratégica de motores SQL y NoSQL según el caso de uso.', 'en': 'Lecture and supervise student projects for the Persistence Strategies course, providing guidance on the strategic selection of SQL and NoSQL engines based on the use case.' },
+    
+    'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
+    'exp3_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
+    'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de trabajos para alumnos de 4to, 5to y 6to grado, orientando en herramientas digitales y programación y lógica básica.', 'en': 'Lecture and supervise student projects for 4th, 5th and 6th grade students, providing guidance on digital tools and basic programming and logic.' },
     
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
@@ -61,6 +54,8 @@ const translations = {
     'proj_epers_desc': { 'es': 'Diseñé un backend modular basado en Clean Architecture que integra estratégicamente motores relacionales, documentales y de grafos, según el caso de uso. Integré geolocalización y búsqueda semántica.', 'en': 'Designed a modular backend based on Clean Architecture, strategically integrating relational, document, and graph databases. Implemented geolocation and semantic search features.' },
     'proj_wordle_title': { 'es': 'Juego Web de Adivinanza de Palabras', 'en': 'Word-Guessing Web Game' },
     'proj_wordle_desc': { 'es': 'Desarrollé una aplicación frontend interactiva con validaciones en tiempo real y niveles de dificultad dinámicos. Gestioné el manejo de sesiones y persistencia de estados para asegurar una experiencia de usuario fluida y adaptable.', 'en': 'Developed an interactive frontend application featuring real-time validations and dynamic difficulty levels. Managed session handling and state persistence to ensure a seamless and responsive user experience.' },
+    'proj_despegar_title': { 'es': 'Asistente de Postventa con IA', 'en': 'AI Post-Sales Assistant' },
+    'proj_despegar_desc': { 'es': 'Desarrollé un sistema inteligente full-stack diseñado para gestionar de forma automática contingencias en viajes. Implementé detección predictiva de demoras, cancelaciones o cambios de hotel, ofreciendo recomendaciones y compensaciones de cortesía personalizadas según el perfil del viajero.', 'en': 'Developed a full-stack intelligent system designed to automatically manage travel contingencies. Implemented predictive detection of delays, cancellations, or hotel changes, offering customized courtesy compensations and recommendations based on traveler profiles.' },
     
     // About me
     'about_title': { 'es': 'Sobre mí', 'en': 'About me' },
@@ -69,7 +64,7 @@ const translations = {
     'about_3': { 'es': 'y, al crecer, decidí empezar con la programación. ', 'en':'started when I was young, which led me to begin a career in programming. ' },
     'about_4': { 'es': 'Mi objetivo es ', 'en': 'My goal is to ' },
     'about_5': { 'es': 'acercar la tecnología a todas las personas ', 'en': 'bring technology closer to all people ' },
-    'about_6': { 'es': 'creando soluciones que resuelvan problemas y mejoren situaciones de la vida diaria.', 'en': 'by creating solutions that solve problems and improve daily life situations.' },
+    'about_6': { 'es': 'creando soluciones que resuelvan problemas, generen impacto y mejoren situaciones de la vida diaria.', 'en': 'by creating solutions that solve problems, generate impact and improve daily life situations.' },
 
     // Footer
     'footer_copyright': { 'es': 'Todos los derechos reservados.', 'en': 'All rights reserved.' },
