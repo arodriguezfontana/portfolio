@@ -16,7 +16,7 @@ const Projects = () => {
                     title={t('proj_title')}
                 >
                     <ProjectCard
-                        image="/portfolio/despegar_image.png"
+                        image="/portfolio/despegar_image.jpg"
                         title={t('proj_despegar_title')}
                         technologies={assets.techsdespegar}
                         description={t('proj_despegar_desc')}
