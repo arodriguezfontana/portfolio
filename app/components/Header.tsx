@@ -47,15 +47,15 @@ const Header = () => {
 
       <div className="max-w-2xl">
         <h2 className="dark:text-gray-200 m-3 text-4xl sm:text-5xl font-bold mt-5 md:mt-1">
-          {t('header_hi')} <span className="text-violet-500">Abril</span>
+          {t('header_hi')} <span className="text-sky-500">Abril</span>
         </h2>
         <p className="dark:text-gray-400 mt-3 text-base sm:text-lg text-gray-700 m-3">
           {t('header_description_1')}
-          <span className="text-violet-500 font-medium">{t('header_description_2')}</span>
+          <span className="text-sky-500 font-medium">{t('header_description_2')}</span>
           {t('header_description_3')}
-          <span className="text-violet-500 font-medium">{t('header_description_4')}</span>
+          <span className="text-sky-500 font-medium">{t('header_description_4')}</span>
           {t('header_description_5')}
-          <span className="text-violet-500 font-medium">{t('header_description_6')}</span>
+          <span className="text-sky-500 font-medium">{t('header_description_6')}</span>
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start mt-5 gap-3 font-medium">
@@ -82,7 +82,7 @@ const Header = () => {
           </Button>
           <Button
             onClick={downloadCV}
-            className="dark:bg-violet-700 dark:hover:bg-violet-500 bg-violet-500 text-white hover:bg-violet-700"
+            className="dark:bg-sky-700 dark:hover:bg-sky-500 bg-sky-500 text-white hover:bg-sky-700"
             icon={<Download size={18} />}
           >
             {t('header_download_cv_btn')}

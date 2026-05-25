@@ -13,11 +13,11 @@ const ExperienceCard = ({ role, company, date, description }: ExperienceCardProp
     <div className="flex items-start gap-2 px-4 pb-8 md:px-8 py-1 overflow-hidden">
       <Dot
         size={30}
-        className="text-violet-500 flex-shrink-0 mt-1 md:size-[40px] hidden xs:block"
+        className="text-sky-500 flex-shrink-0 mt-1 md:size-[40px] hidden xs:block"
       />
 
       <div className="flex flex-col min-w-0 max-w-full"> 
-        <h5 className="text-violet-500 font-semibold text-xl leading-tight">{role}</h5>
+        <h5 className="text-sky-500 font-semibold text-xl leading-tight">{role}</h5>
         <p className="dark:text-gray-200 text-gray-800 font-medium text-lg">{company}</p>
         <p className="text-sm text-gray-500 mb-3">{date}</p>
         <p className="dark:text-gray-400 text-gray-700 text-base leading-relaxed break-words">

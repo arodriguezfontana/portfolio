@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, d
           {technologies.map((tech, i) => (
             <span
               key={i}
-              className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-white text-xs font-medium bg-violet-500 dark:bg-violet-700`}
+              className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-white text-xs font-medium bg-sky-500 dark:bg-sky-700`}
             >
               {tech.logo}
               {tech.tecnologia}
@@ -67,8 +67,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, technologies, d
           target="_blank"
           rel="noopener noreferrer"
           className="
-            inline-flex items-center gap-2 text-lg font-semibold text-violet-500
-            hover:text-violet-600 transition-all duration-200
+            inline-flex items-center gap-2 text-lg font-semibold text-sky-500
+            hover:text-sky-600 transition-all duration-200
           "
         >
           {t('proj_repo_link')}
