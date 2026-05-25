@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Abril Rodríguez | Portfolio",
   description: "Abril Rodríguez | Portfolio",
   icons: {
-    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%2300FFFF" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>',
+    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23FFFFFF" d="M12.89 3L14.85 3.4L11.11 21L9.15 20.6L12.89 3M6.5 6.5L8.5 8.5L5 12L8.5 15.5L6.5 17.5L1.5 12L6.5 6.5M17.5 6.5L22.5 12L17.5 17.5L15.5 15.5L19 12L15.5 8.5L17.5 6.5Z"/></svg>',
   },
 };
 

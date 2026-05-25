@@ -37,7 +37,7 @@ const Navbar = () => {
           <li key={href} className="flex items-center">
             <a
               href={href}
-              className={`dark:text-gray-200 text-gray-800 hover:text-cyan-600 transition-colors font-[500] 
+              className={`dark:text-gray-200 text-gray-800 hover:text-violet-600 transition-colors font-[500] 
     whitespace-nowrap text-[12px] xs:text-sm sm:text-base 
     ${show ? "dark:text-gray-800" : ""}`}
             >
@@ -49,7 +49,7 @@ const Navbar = () => {
         <li className="flex items-center">
           <button
             onClick={toggleLanguage}
-            className="text-cyan-500 hover:text-cyan-700 font-[500] px-2"
+            className="text-violet-500 hover:text-violet-700 font-[500] px-2"
           >
             {language === 'es' ? 'EN' : 'ES'}
           </button>
@@ -61,9 +61,9 @@ const Navbar = () => {
             className="flex items-center justify-center"
           >
             {isDark ? (
-              <Sun size={18} className="dark:text-cyan-700 dark:hover:text-cyan-500 text-cyan-500 hover:text-cyan-700" />
+              <Sun size={18} className="dark:text-violet-700 dark:hover:text-violet-500 text-violet-500 hover:text-violet-700" />
             ) : (
-              <Moon size={18} className="dark:text-cyan-700 dark:hover:text-cyan-500 text-cyan-500 hover:text-cyan-700" />
+              <Moon size={18} className="dark:text-violet-700 dark:hover:text-violet-500 text-violet-500 hover:text-violet-700" />
             )}
           </button>
         </li>
