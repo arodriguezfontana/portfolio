@@ -25,7 +25,7 @@ const translations = {
 
     'header_description_1': { 'es': 'Estudiante avanzada de la ', 'en': 'Advanced student of ' },
     'header_description_2': { 'es': 'Licenciatura en Informática ', 'en': 'B.S. in Computer Science ' },
-    'header_description_3': { 'es': 'con más de 2 años de experiencia en  ', 'en': 'with over 2 years of experience in  ' },
+    'header_description_3': { 'es': 'con experiencia en  ', 'en': 'with experience in  ' },
     'header_description_4': { 'es': 'Desarrollo Full Stack. ', 'en': 'Full Stack Development. ' },
     'header_description_5': { 'es': 'Actualmente profundizando en ', 'en': 'Currently deepening my expertise in ' },
     'header_description_6': { 'es': 'Ciencia de Datos.', 'en': 'Data Science.' },
@@ -35,31 +35,35 @@ const translations = {
     //'exp_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Aug. 2024 - Present' },
     //'exp_desc_freelance': { 'es': 'Lidero el desarrollo de funcionalidades bajo Clean Architecture y microservicios para asegurar sistemas desacoplados, testeables y escalables. Optimizo consultas a bases de datos en módulos de alta demanda y diseño interfaces responsivas con Hooks, garantizando la integridad de los datos y una experiencia de usuario fluida.', 'en': 'Lead the development of functionalities under Clean Architecture and microservices to ensure decoupled, testable, and scalable systems. Optimize database queries in high-demand modules and design responsive interfaces with Hooks, ensuring data integrity and a seamless user experience.' },
 
-    'exp2_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
-    'exp2_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
-    'exp2_desc_freelance': { 'es': 'Dicto clases y superviso entregas para la materia Estrategias de Persistencia, orientando en la selección estratégica de motores SQL y NoSQL según el caso de uso.', 'en': 'Lecture and supervise student projects for the Persistence Strategies course, providing guidance on the strategic selection of SQL and NoSQL engines based on the use case.' },
+    'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
+    'exp3_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
+    'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de entregas para la materia Estrategias de Persistencia, con enfoque en el modelado y gestión de datos en motores SQL y NoSQL, brindando mentoría técnica a estudiantes en el diseño de arquitecturas de persistencia, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Teaching classes and grading project deliverables for the Persistence Strategies course, focusing on data modeling and management across SQL and NoSQL engines, while providing technical mentorship to students in designing persistence architectures, optimizing complex queries, and making strategic decisions based on specific use cases.' },
     
-    'exp3_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
-    'exp3_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
-    'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de trabajos para alumnos de 4to, 5to y 6to grado, orientando en herramientas digitales y programación y lógica básica.', 'en': 'Lecture and supervise student projects for 4th, 5th and 6th grade students, providing guidance on digital tools and basic programming and logic.' },
+    'exp2_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
+    'exp2_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
+    'exp2_desc_freelance': { 'es': 'Planificación y dictado de clases de informática para estudiantes de 4to, 5to y 6to grado de nivel primario, junto con el diseño de actividades enfocadas en herramientas digitales (MS Office), fundamentos de la programación (Gobstones) y pensamiento computacional.', 'en': 'Lesson planning and instruction of computer science classes for 4th, 5th, and 6th-grade elementary school students, alongside designing activities focused on digital tools (MS Office), core programming fundamentals (Gobstones), and computational thinking.' },
     
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
     'proj_repo_link': { 'es': 'Ver Repositorio', 'en': 'View Repository' },
-    'proj_gog_title': { 'es': 'E-Commerce Multi-Plataforma de Videojuegos', 'en': 'Multi-Platform Video Game E-Commerce' },
-    'proj_gog_desc': {  'es': 'Implementé interfaces dinámicas para web y mobile, logrando un diseño Responsive y optimizando la experiencia de usuario en flujos complejos.', 'en': 'Implemented dynamic interfaces for web and mobile, achieving a responsive design and optimizing user experience across complex workflows.' },
-    'proj_accidenta_title': { 'es': 'Aplicación Móvil de Emergencias', 'en': 'Mobile Emergency App' },
-    'proj_accidenta_desc': { 'es': 'Desarrollé una solución móvil que integra geolocalización en tiempo real y envío de alertas ante urgencias. Integré métricas para la visualización de tendencias de accidentes por zona, tipo y fecha, facilitando su posterior análisis estadístico.', 'en': 'Developed a mobile solution featuring real-time geolocation and emergency alert systems. Integrated metrics for visualizing accident trends by area, type, and date, facilitating subsequent statistical analysis.' },
-    'proj_epers_title': { 'es': 'Sistema de Persistencia Multi-Bases de Datos', 'en': 'Multi-Database Persistence System' },
-    'proj_epers_desc': { 'es': 'Diseñé un backend modular basado en Clean Architecture que integra estratégicamente motores relacionales, documentales y de grafos, según el caso de uso. Integré geolocalización y búsqueda semántica.', 'en': 'Designed a modular backend based on Clean Architecture, strategically integrating relational, document, and graph databases. Implemented geolocation and semantic search features.' },
+    'proj_gog_title': { 'es': 'E-Commerce de Videojuegos Multiplataforma', 'en': 'Multiplatform E-Commerce for Video Games' },
+    'proj_gog_desc': {  'es': 'Construcción de una plataforma de venta de videojuegos mediante una arquitectura modular de tres capas, garantizando interfaces web y móviles completamente responsivas con flujos dinámicos de usuario.', 'en': 'Construction of a video game retail platform using a modular three-tier architecture, ensuring fully responsive web and mobile interfaces with dynamic user workflows.' },
+    
+    'proj_accidenta_title': { 'es': 'Aplicación Móvil de Emergencias', 'en': 'Emergency Mobile Application' },
+    'proj_accidenta_desc': { 'es': 'Desarrollo de una solución de seguridad crítica con geolocalización en tiempo real, envío instantáneo de alertas, gestión de fichas médicas, reportes multimedia de incidentes y un panel estadístico de accidentabilidad por zonas.', 'en': 'Development of a critical safety solution featuring real-time geolocation, instant alert broadcasting, medical profile management, multimedia incident reporting, and a statistical dashboard tracking accident rates by zone.' },
+    
+    'proj_epers_title': { 'es': 'Arquitectura de Persistencia Políglota', 'en': 'Polyglot Persistence Architecture' },
+    'proj_epers_desc': { 'es': 'Diseño de un backend modular bajo Clean Architecture y microservicios, implementando una estrategia de almacenamiento híbrido (SQL, NoSQL, Grafos y Búsqueda avanzada) optimizada según cada caso de uso.', 'en': 'Design of a modular backend under Clean Architecture and microservices, implementing a hybrid storage strategy (SQL, NoSQL, Graphs, and Advanced Search) optimized for specific use cases.' },
+
     'proj_wordle_title': { 'es': 'Juego Web de Adivinanza de Palabras', 'en': 'Word-Guessing Web Game' },
-    'proj_wordle_desc': { 'es': 'Desarrollé una aplicación frontend interactiva con validaciones en tiempo real y niveles de dificultad dinámicos. Gestioné el manejo de sesiones y persistencia de estados para asegurar una experiencia de usuario fluida y adaptable.', 'en': 'Developed an interactive frontend application featuring real-time validations and dynamic difficulty levels. Managed session handling and state persistence to ensure a seamless and responsive user experience.' },
-    'proj_despegar_title': { 'es': 'Asistente de Postventa con IA', 'en': 'AI Post-Sales Assistant' },
-    'proj_despegar_desc': { 'es': 'Desarrollé un sistema inteligente full-stack diseñado para gestionar de forma automática contingencias en viajes. Implementé detección predictiva de demoras, cancelaciones o cambios de hotel, ofreciendo recomendaciones y compensaciones de cortesía personalizadas según el perfil del viajero.', 'en': 'Developed a full-stack intelligent system designed to automatically manage travel contingencies. Implemented predictive detection of delays, cancellations, or hotel changes, offering customized courtesy compensations and recommendations based on traveler profiles.' },
+    'proj_wordle_desc': { 'es': 'Desarrollo de una aplicación interactiva con validaciones en tiempo real y niveles de dificultad dinámicos. Incluye manejo de sesiones y persistencia de estados para asegurar una experiencia de usuario fluida y con diseño adaptable.', 'en': 'Development of an interactive application featuring real-time validations and dynamic difficulty levels, including session management and state persistence to ensure a smooth user experience and responsive design.' },
+
+    'proj_despegar_title': { 'es': 'Asistente de Postventa con IA', 'en': 'AI-Powered After-Sales Assistant' },
+    'proj_despegar_desc': { 'es': 'Desarrollo de un sistema inteligente full-stack para la automatización de contingencias de viajes, integrando servicios predictivos que detectan demoras o cancelaciones y gestionan compensaciones dinámicas según el perfil del usuario. ', 'en': 'Full-stack development of an intelligent system for travel contingency automation, integrating predictive services to detect delays or cancellations and manage dynamic compensations based on user profiles.' },
     
     // About me
     'about_title': { 'es': 'Sobre mí', 'en': 'About me' },
-    'about_1': { 'es': 'Me llamo Abril. Desde pequeña ', 'en': 'My name is Abril. My ' },
+    'about_1': { 'es': 'Desde pequeña ', 'en': 'My ' },
     'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'passion for technology ' },
     'about_3': { 'es': 'y, al crecer, decidí empezar con la programación. ', 'en':'started when I was young, which led me to begin a career in programming. ' },
     'about_4': { 'es': 'Mi objetivo es ', 'en': 'My goal is to ' },
