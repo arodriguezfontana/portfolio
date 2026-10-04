@@ -16,6 +16,8 @@ const translations = {
     'nav_experience': { 'es': 'Experiencia', 'en': 'Experience' },
     'nav_projects': { 'es': 'Proyectos', 'en': 'Projects' },
     'nav_about': { 'es': 'Sobre mí', 'en': 'About me' },
+    'nav_skills': { 'es': 'Habilidades', 'en': 'Skills' },
+    'nav_contact': { 'es': 'Contacto', 'en': 'Contact' },
     
     // Header
     'header_available': { 'es': 'Disponible para trabajar', 'en': 'Available for work' },
@@ -25,16 +27,13 @@ const translations = {
 
     'header_description_1': { 'es': 'Estudiante avanzada de la ', 'en': 'Advanced student of ' },
     'header_description_2': { 'es': 'Licenciatura en Informática ', 'en': 'B.S. in Computer Science ' },
-    'header_description_3': { 'es': 'con experiencia en  ', 'en': 'with experience in  ' },
+    'header_description_3': { 'es': 'con experiencia en ', 'en': 'with experience in ' },
     'header_description_4': { 'es': 'Desarrollo Full Stack. ', 'en': 'Full Stack Development. ' },
     'header_description_5': { 'es': 'Actualmente profundizando en ', 'en': 'Currently deepening my expertise in ' },
     'header_description_6': { 'es': 'Ciencia de Datos.', 'en': 'Data Science.' },
     
     // Experiencia
     'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
-    //'exp_date_freelance': { 'es': 'Ago. 2024 - Actualidad', 'en': 'Aug. 2024 - Present' },
-    //'exp_desc_freelance': { 'es': 'Lidero el desarrollo de funcionalidades bajo Clean Architecture y microservicios para asegurar sistemas desacoplados, testeables y escalables. Optimizo consultas a bases de datos en módulos de alta demanda y diseño interfaces responsivas con Hooks, garantizando la integridad de los datos y una experiencia de usuario fluida.', 'en': 'Lead the development of functionalities under Clean Architecture and microservices to ensure decoupled, testable, and scalable systems. Optimize database queries in high-demand modules and design responsive interfaces with Hooks, ensuring data integrity and a seamless user experience.' },
-
     'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
     'exp3_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
     'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de entregas para la materia Estrategias de Persistencia, con enfoque en el modelado y gestión de datos en motores SQL y NoSQL, brindando mentoría técnica a estudiantes en el diseño de arquitecturas de persistencia, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Teaching classes and grading project deliverables for the Persistence Strategies course, focusing on data modeling and management across SQL and NoSQL engines, while providing technical mentorship to students in designing persistence architectures, optimizing complex queries, and making strategic decisions based on specific use cases.' },
@@ -46,8 +45,13 @@ const translations = {
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
     'proj_repo_link': { 'es': 'Ver Repositorio', 'en': 'View Repository' },
+    'proj_view_more': { 'es': 'Ver más', 'en': 'View more' },
+    'proj_modal_close': { 'es': 'Cerrar', 'en': 'Close' },
+    'proj_modal_gallery': { 'es': 'Galería de capturas', 'en': 'Visual gallery' },
+    'proj_modal_techs': { 'es': 'Stack tecnológico', 'en': 'Tech stack' },
+    'proj_modal_details': { 'es': 'Detalles del proyecto', 'en': 'Project details' },
     'proj_gog_title': { 'es': 'E-Commerce de Videojuegos Multiplataforma', 'en': 'Multiplatform E-Commerce for Video Games' },
-    'proj_gog_desc': {  'es': 'Construcción de una plataforma de venta de videojuegos mediante una arquitectura modular de tres capas, garantizando interfaces web y móviles completamente responsivas con flujos dinámicos de usuario.', 'en': 'Construction of a video game retail platform using a modular three-tier architecture, ensuring fully responsive web and mobile interfaces with dynamic user workflows.' },
+    'proj_gog_desc': { 'es': 'Construcción de una plataforma de venta de videojuegos mediante una arquitectura modular de tres capas, garantizando interfaces web y móviles completamente responsivas con flujos dinámicos de usuario.', 'en': 'Construction of a video game retail platform using a modular three-tier architecture, ensuring fully responsive web and mobile interfaces with dynamic user workflows.' },
     
     'proj_accidenta_title': { 'es': 'Aplicación Móvil de Emergencias', 'en': 'Emergency Mobile Application' },
     'proj_accidenta_desc': { 'es': 'Desarrollo de una solución de seguridad crítica con geolocalización en tiempo real, envío instantáneo de alertas, gestión de fichas médicas, reportes multimedia de incidentes y un panel estadístico de accidentabilidad por zonas.', 'en': 'Development of a critical safety solution featuring real-time geolocation, instant alert broadcasting, medical profile management, multimedia incident reporting, and a statistical dashboard tracking accident rates by zone.' },
@@ -59,19 +63,24 @@ const translations = {
     'proj_wordle_desc': { 'es': 'Desarrollo de una aplicación interactiva con validaciones en tiempo real y niveles de dificultad dinámicos. Incluye manejo de sesiones y persistencia de estados para asegurar una experiencia de usuario fluida y con diseño adaptable.', 'en': 'Development of an interactive application featuring real-time validations and dynamic difficulty levels, including session management and state persistence to ensure a smooth user experience and responsive design.' },
 
     'proj_despegar_title': { 'es': 'Asistente de Postventa con IA', 'en': 'AI-Powered After-Sales Assistant' },
-    'proj_despegar_desc': { 'es': 'Desarrollo de un sistema inteligente full-stack para la automatización de contingencias de viajes, integrando servicios predictivos que detectan demoras o cancelaciones y gestionan compensaciones dinámicas según el perfil del usuario. ', 'en': 'Full-stack development of an intelligent system for travel contingency automation, integrating predictive services to detect delays or cancellations and manage dynamic compensations based on user profiles.' },
+    'proj_despegar_desc': { 'es': 'Desarrollo de un sistema inteligente full-stack para la automatización de contingencias de viajes, integrando servicios predictivos que detectan demoras o cancelaciones y gestionan compensaciones dinámicas según el perfil del usuario.', 'en': 'Full-stack development of an intelligent system for travel contingency automation, integrating predictive services to detect delays or cancellations and manage dynamic compensations based on user profiles.' },
     
     // About me
     'about_title': { 'es': 'Sobre mí', 'en': 'About me' },
-    'about_1': { 'es': 'Desde pequeña ', 'en': 'My ' },
-    'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'passion for technology ' },
-    'about_3': { 'es': 'y, al crecer, decidí empezar con la programación. ', 'en':'started when I was young, which led me to begin a career in programming. ' },
-    'about_4': { 'es': 'Mi objetivo es ', 'en': 'My goal is to ' },
-    'about_5': { 'es': 'acercar la tecnología a todas las personas ', 'en': 'bring technology closer to all people ' },
-    'about_6': { 'es': 'creando soluciones que resuelvan problemas, generen impacto y mejoren situaciones de la vida diaria.', 'en': 'by creating solutions that solve problems, generate impact and improve daily life situations.' },
+    'about_subtitle': { 'es': 'Historia & Enfoque', 'en': 'Story & Philosophy' },
+    'about_1': { 'es': 'Desde pequeña ', 'en': 'Ever since I was little, ' },
+    'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'technology has been my true passion, ' },
+    'about_3': { 'es': 'y, al crecer, decidí empezar con la programación. ', 'en': 'which inspired me to pursue programming as my craft. ' },
+    'about_4': { 'es': 'Mi objetivo es ', 'en': 'My mission is to ' },
+    'about_5': { 'es': 'acercar la tecnología a todas las personas ', 'en': 'bring technology closer to everyone ' },
+    'about_6': { 'es': 'creando soluciones que resuelvan problemas reales, generen impacto positivo y mejoren situaciones de la vida diaria.', 'en': 'by crafting solutions that solve real problems, spark positive impact, and elevate everyday experiences.' },
+    'about_skills_title': { 'es': 'Habilidades & Tecnologías', 'en': 'Skills & Technologies' },
+    'about_values_title': { 'es': 'Pilares de Trabajo', 'en': 'Core Pillars' },
 
     // Footer
-    'footer_copyright': { 'es': 'Todos los derechos reservados.', 'en': 'All rights reserved.' },
+    'footer_talk_title': { 'es': '¿Construimos algo juntos?', 'en': "Let's create something together" },
+    'footer_talk_subtitle': { 'es': 'Siempre abierta a nuevos proyectos, colaboraciones y desafíos tecnológicos.', 'en': 'Always open to exciting projects, creative collaborations, and tech opportunities.' },
+    'footer_copyright': { 'es': 'Diseñado y desarrollado con estilo editorial & dedicación.', 'en': 'Designed & crafted with editorial elegance and care.' },
     'footer_contact_link': { 'es': 'Contacto', 'en': 'Contact' },
 };
 
@@ -105,7 +114,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
             {children}
         </LanguageContext.Provider>
     );
-    
 };
 
 export const useLanguage = () => {

@@ -1,24 +1,41 @@
 'use client';
+import React from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className=" dark:bg-gray-900 bg-gray-50 min-h-screen">
+    <div className="min-h-screen bg-[#eeeeee] dark:bg-[#1a040d] text-[#8a5743] dark:text-[#dcdcdc] transition-colors duration-300 relative selection:bg-[#ffc3e9] selection:text-[#43031a]">
+      {/* Floating or fixed luxury navbar */}
       <Navbar />
-      <Header />
-      <div className="w-full flex justify-center">
-        <div className="w-full max-w-4xl">
-          <Experience />
-          <Projects />
-          <About />
+
+      <main className="relative overflow-hidden">
+        {/* 1. Hero Section */}
+        <Header />
+
+        {/* Central container for editorial sections with identical vertical spacing */}
+        <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8 mt-20 md:mt-28">
+          <div className="w-full max-w-7xl space-y-20 md:space-y-28">
+            {/* 2. Featured Projects (Grid 3-4 cards) */}
+            <Projects />
+
+            {/* 3. Work Experience */}
+            <Experience />
+
+            {/* 4. About Me & Skills */}
+            <About />
+          </div>
         </div>
-      </div>
-      <Footer />
-    </main>
+
+        {/* 5. Boutique Contact Lounge & Footer with equalized spacing */}
+        <div className="mt-20 md:mt-28">
+          <Footer />
+        </div>
+      </main>
+    </div>
   );
 }
