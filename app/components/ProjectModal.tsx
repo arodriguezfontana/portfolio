@@ -103,7 +103,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           
           {/* LEFT: Image Gallery Preview (fits screen height with max-h) */}
           <div className="md:col-span-7 flex flex-col justify-center">
-            <div className="relative rounded-[1.5rem] sm:rounded-[1.75rem] overflow-hidden border border-[#ffc3e9]/50 bg-[#fff2fb] aspect-[16/10] sm:aspect-[4/3] md:aspect-[16/11] max-h-[44vh] md:max-h-[52vh] w-full shadow-inner group">
+            <div className="relative rounded-[1.5rem] sm:rounded-[1.75rem] overflow-hidden border border-[#ffc3e9]/50 dark:border-[#8a1239]/50 bg-[#fff2fb] dark:bg-[#1a040d] aspect-[16/10] sm:aspect-[4/3] md:aspect-[16/11] max-h-[44vh] md:max-h-[52vh] w-full shadow-inner group">
               <Image
                 src={gallery[activeImageIndex]}
                 alt={`${project.title} imagen ${activeImageIndex + 1}`}
@@ -118,14 +118,14 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                   <button
                     onClick={prevImage}
                     title="Imagen anterior"
-                    className="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 dark:bg-[#230713]/90 border border-[#ffc3e9] text-[#640527] dark:text-[#ffc3e9] flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer"
+                    className="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 dark:bg-[#230713]/90 border border-[#ffc3e9] dark:border-[#8a1239] text-[#640527] dark:text-[#ffc3e9] flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer"
                   >
                     <ChevronLeft size={16} />
                   </button>
                   <button
                     onClick={nextImage}
                     title="Imagen siguiente"
-                    className="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 dark:bg-[#230713]/90 border border-[#ffc3e9] text-[#640527] dark:text-[#ffc3e9] flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer"
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 dark:bg-[#230713]/90 border border-[#ffc3e9] dark:border-[#8a1239] text-[#640527] dark:text-[#ffc3e9] flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer"
                   >
                     <ChevronRight size={16} />
                   </button>
@@ -146,8 +146,8 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     onClick={() => setActiveImageIndex(idx)}
                     className={`relative w-16 h-11 rounded-[0.75rem] overflow-hidden border-2 transition-all shrink-0 cursor-pointer ${
                       activeImageIndex === idx
-                        ? 'border-[#640527] scale-105 shadow-md'
-                        : 'border-[#ffc3e9]/60 opacity-60 hover:opacity-100'
+                        ? 'border-[#640527] dark:border-[#ffc3e9] scale-105 shadow-md'
+                        : 'border-[#ffc3e9]/60 dark:border-[#8a1239]/60 opacity-60 hover:opacity-100'
                     }`}
                   >
                     <Image src={img} alt="thumbnail" fill className="object-cover" />
@@ -188,7 +188,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10.5px] font-semibold bg-[#eeeeee] dark:bg-[#340c1e] text-[#640527] dark:text-[#ffc3e9] border border-[#dcdcdc] dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] transition-colors"
+                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10.5px] font-semibold bg-[#eeeeee] dark:bg-[#340c1e] text-[#640527] dark:text-[#ffc3e9] border border-[#dcdcdc] dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] dark:hover:bg-[#43031a] transition-colors"
                     >
                       <span className="text-xs text-[#8a1239] dark:text-[#ffb1e3]">{tech.logo}</span>
                       <span>{tech.tecnologia}</span>
@@ -204,7 +204,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-[#640527] hover:bg-[#75062e] shadow-md shadow-[#640527]/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-[#640527] dark:bg-[#8a1239] hover:bg-[#75062e] dark:hover:bg-[#a31745] shadow-md shadow-[#640527]/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
               >
                 <FaGithub size={14} />
                 <span>{t('proj_repo_link')}</span>
@@ -213,7 +213,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
               <button
                 onClick={onClose}
-                className="px-4 py-2 rounded-full text-xs font-semibold text-[#8a5743] dark:text-[#dcdcdc] bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] hover:bg-[#fff2fb] transition-all cursor-pointer"
+                className="px-4 py-2 rounded-full text-xs font-semibold text-[#8a5743] dark:text-[#dcdcdc] bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] hover:bg-[#fff2fb] dark:hover:bg-[#340c1e] dark:hover:text-[#ffc3e9] transition-all cursor-pointer"
               >
                 {t('proj_modal_close')}
               </button>

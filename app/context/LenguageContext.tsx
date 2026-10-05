@@ -24,6 +24,8 @@ const translations = {
     'header_hi': { 'es': 'Hola, soy', 'en': "Hi, I'm" },
     'header_contact_btn': { 'es': 'Contactame', 'en': 'Contact me' },
     'header_download_cv_btn': { 'es': 'Descargar CV', 'en': 'Download CV' },
+    'header_download_cv_es': { 'es': 'ES', 'en': 'ES' },
+    'header_download_cv_en': { 'es': 'EN', 'en': 'EN' },
 
     'header_description_1': { 'es': 'Estudiante avanzada de la ', 'en': 'Advanced student of ' },
     'header_description_2': { 'es': 'Licenciatura en Informática ', 'en': 'B.S. in Computer Science ' },
@@ -46,12 +48,12 @@ const translations = {
 
     // Colegio Bruzzone
     'exp2_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
-    'exp2_date_freelance': { 'es': 'Abr. 2024 - Actualidad', 'en': 'Apr. 2024 - Present' },
+    'exp2_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
     'exp2_desc_freelance': { 'es': 'Planificación y dictado de clases de informática para estudiantes de 4to, 5to y 6to grado de nivel primario, junto con el diseño de actividades enfocadas en herramientas digitales (MS Office), fundamentos de la programación (Gobstones) y pensamiento computacional.', 'en': 'Lesson planning and instruction of computer science classes for 4th, 5th, and 6th-grade elementary school students, alongside designing activities focused on digital tools (MS Office), core programming fundamentals (Gobstones), and computational thinking.' },
 
     // UNQ Ayudante
     'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
-    'exp3_date_freelance': { 'es': 'Mar. 2024 - Actualidad', 'en': 'Mar. 2024 - Present' },
+    'exp3_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
     'exp_unq_course1_title': { 'es': 'Estrategias de Persistencia', 'en': 'Persistence Strategies' },
     'exp_unq_course1_desc': { 'es': 'Dictado de clases y mentoría técnica a estudiantes, con foco en el diseño de APIs REST, arquitecturas de persistencia SQL y NoSQL, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Lecturing and technical mentorship for students, focusing on REST API design, SQL and NoSQL persistence architectures, complex query optimization, and strategic decision-making tailored to each use case.' },
     'exp_unq_course2_title': { 'es': 'Programación con Objetos', 'en': 'Object-Oriented Programming' },
@@ -107,9 +109,10 @@ const translations = {
     'about_values_title': { 'es': 'Pilares de Trabajo', 'en': 'Core Pillars' },
 
     // Footer
-    'footer_talk_title': { 'es': '¿Construimos algo juntos?', 'en': "Let's create something together" },
-    'footer_talk_subtitle': { 'es': 'Siempre abierta a nuevos proyectos, colaboraciones y desafíos tecnológicos.', 'en': 'Always open to exciting projects, creative collaborations, and tech opportunities.' },
-    'footer_copyright': { 'es': 'Diseñado y desarrollado con estilo editorial & dedicación.', 'en': 'Designed & crafted with editorial elegance and care.' },
+    'footer_talk_title': { 'es': '¿Construimos algo juntos?', 'en': "Let's build something together?" },
+    'footer_talk_subtitle': { 'es': 'Siempre con ganas de escuchar nuevas propuestas y sumarme a proyectos innovadores.', 'en': 'Always eager to hear new proposals and join innovative projects.' },
+    'footer_back_to_top': { 'es': 'Subir', 'en': 'Back to top' },
+    'footer_copyright': { 'es': 'Gracias por visitar mi portfolio.', 'en': 'Thank you for visiting my portfolio.' },
     'footer_contact_link': { 'es': 'Contacto', 'en': 'Contact' },
 };
 

@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           role={onOpenDetails ? "button" : undefined}
           tabIndex={onOpenDetails ? 0 : undefined}
           onKeyDown={(e) => e.key === 'Enter' && onOpenDetails && onOpenDetails()}
-          className="relative rounded-[1.25rem] overflow-hidden border border-[#ffc3e9]/40 bg-[#fff2fb] aspect-[16/10] mb-3.5 group-hover:shadow-md transition-shadow cursor-pointer"
+          className="relative rounded-[1.25rem] overflow-hidden border border-[#ffc3e9]/40 dark:border-[#8a1239]/50 bg-[#fff2fb] dark:bg-[#2d0a18] aspect-[16/10] mb-3.5 group-hover:shadow-md transition-shadow cursor-pointer"
         >
           <Image
             src={image}
@@ -67,7 +67,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {/* Project Title with Diamond ✦ icon and optional in-progress badge */}
         <h3 
           onClick={onOpenDetails}
-          className="text-base font-bold text-[#640527] dark:text-[#ffc3e9] tracking-tight mb-2.5 leading-snug cursor-pointer hover:text-[#8a1239] transition-colors flex items-start gap-1.5"
+          className="text-base font-bold text-[#640527] dark:text-[#ffc3e9] tracking-tight mb-2.5 leading-snug cursor-pointer hover:text-[#8a1239] dark:hover:text-white transition-colors flex items-start gap-1.5"
         >
           <span className="text-[#8a1239] dark:text-[#ffb1e3] shrink-0 text-xs mt-0.5">✦</span>
           <span className="flex-1">
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {visibleTechs.map((tech, i) => (
             <span
               key={i}
-              className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9.5px] font-semibold bg-[#eeeeee] dark:bg-[#340c1e] text-[#640527] dark:text-[#ffc3e9] border border-[#dcdcdc] dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] transition-colors"
+              className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9.5px] font-semibold bg-[#eeeeee] dark:bg-[#340c1e] text-[#640527] dark:text-[#ffc3e9] border border-[#dcdcdc] dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] dark:hover:bg-[#43031a] transition-colors"
             >
               <span className="text-[10px] text-[#8a1239] dark:text-[#ffb1e3]">{tech.logo}</span>
               <span>{tech.tecnologia}</span>
@@ -104,7 +104,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <button
           type="button"
           onClick={onOpenDetails}
-          className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold text-[#640527] dark:text-[#ffc3e9] bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] hover:bg-[#fff2fb] hover:border-[#640527] transition-all cursor-pointer shadow-2xs hover:scale-102"
+          className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold text-[#640527] dark:text-[#ffc3e9] bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] hover:bg-[#fff2fb] dark:hover:bg-[#43031a] hover:border-[#640527] dark:hover:border-[#ffc3e9] transition-all cursor-pointer shadow-2xs hover:scale-102"
         >
           <Eye size={12} />
           <span>{t('proj_view_more')}</span>

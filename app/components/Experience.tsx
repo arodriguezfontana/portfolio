@@ -28,7 +28,7 @@ const Experience = () => {
           </span>
         }
       >
-        <div className="bg-white/95 dark:bg-[#230713]/90 backdrop-blur-md rounded-[2.5rem] border border-[#ffc3e9]/60 dark:border-[#8a1239]/40 p-6 sm:p-10 shadow-xl shadow-[#640527]/5">
+        <div className="bg-white/95 dark:bg-[#230713]/90 backdrop-blur-md rounded-[2.25rem] border border-[#ffc3e9]/60 dark:border-[#8a1239]/40 p-4 sm:p-6 lg:p-7 shadow-xl shadow-[#640527]/5">
           <div className="w-full">
             {/* Altitud */}
             <ExperienceCard
@@ -37,21 +37,21 @@ const Experience = () => {
               badge={t('exp_altitud_badge')}
               date={t('exp_altitud_date')}
             >
-              <ul className="space-y-2 mt-3 text-sm sm:text-base text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed">
-                <li className="flex items-start gap-2.5">
-                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-1 shrink-0">✦</span>
+              <ul className="space-y-1.5 mt-2 text-xs sm:text-[13px] text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
                   <span>{t('exp_altitud_p1')}</span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-1 shrink-0">✦</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
                   <span>{t('exp_altitud_p2')}</span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-1 shrink-0">✦</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
                   <span>{t('exp_altitud_p3')}</span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-1 shrink-0">✦</span>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
                   <span>{t('exp_altitud_p4')}</span>
                 </li>
               </ul>
@@ -62,8 +62,12 @@ const Experience = () => {
               role={t('exp2_role')}
               company="Colegio Pbro. Manuel Bruzzone"
               date={t('exp2_date_freelance')}
-              description={t('exp2_desc_freelance')}
-            />
+            >
+              <div className="flex items-start gap-2 mt-2 text-xs sm:text-[13px] text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed">
+                <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
+                <span>{t('exp2_desc_freelance')}</span>
+              </div>
+            </ExperienceCard>
 
             {/* Universidad Nacional de Quilmes */}
             <ExperienceCard
@@ -72,29 +76,25 @@ const Experience = () => {
               date={t('exp3_date_freelance')}
               isLast={true}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 mt-3">
-                <div className="p-4 rounded-[1.25rem] bg-white/70 dark:bg-[#340c1e]/60 border border-[#ffc3e9]/60 dark:border-[#8a1239]/40 flex flex-col justify-start">
-                  <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs shrink-0">✦</span>
-                    <h5 className="font-bold text-xs uppercase tracking-wider text-[#640527] dark:text-[#ffc3e9]">
-                      {t('exp_unq_course1_title')}
-                    </h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2.5">
+                <div className="p-3 sm:p-3.5 rounded-[1.15rem] bg-white/70 dark:bg-[#340c1e]/60 border border-[#ffc3e9]/60 dark:border-[#8a1239]/40 flex flex-col justify-start">
+                  <h5 className="font-bold text-xs uppercase tracking-wider text-[#640527] dark:text-[#ffc3e9] mb-1.5">
+                    {t('exp_unq_course1_title')}
+                  </h5>
+                  <div className="flex items-start gap-2 text-xs sm:text-[13px] text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed font-normal">
+                    <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
+                    <span>{t('exp_unq_course1_desc')}</span>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed font-normal">
-                    {t('exp_unq_course1_desc')}
-                  </p>
                 </div>
 
-                <div className="p-4 rounded-[1.25rem] bg-white/70 dark:bg-[#340c1e]/60 border border-[#ffc3e9]/60 dark:border-[#8a1239]/40 flex flex-col justify-start">
-                  <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs shrink-0">✦</span>
-                    <h5 className="font-bold text-xs uppercase tracking-wider text-[#640527] dark:text-[#ffc3e9]">
-                      {t('exp_unq_course2_title')}
-                    </h5>
+                <div className="p-3 sm:p-3.5 rounded-[1.15rem] bg-white/70 dark:bg-[#340c1e]/60 border border-[#ffc3e9]/60 dark:border-[#8a1239]/40 flex flex-col justify-start">
+                  <h5 className="font-bold text-xs uppercase tracking-wider text-[#640527] dark:text-[#ffc3e9] mb-1.5">
+                    {t('exp_unq_course2_title')}
+                  </h5>
+                  <div className="flex items-start gap-2 text-xs sm:text-[13px] text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed font-normal">
+                    <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs mt-0.5 shrink-0">✦</span>
+                    <span>{t('exp_unq_course2_desc')}</span>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed font-normal">
-                    {t('exp_unq_course2_desc')}
-                  </p>
                 </div>
               </div>
             </ExperienceCard>

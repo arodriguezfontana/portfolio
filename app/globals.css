@@ -45,6 +45,11 @@ body {
   min-height: 100vh;
 }
 
+html.dark body {
+  background-color: #1a040d;
+  color: #dcdcdc;
+}
+
 /* Editorial cursive accent typography */
 .font-delicate {
   font-family: var(--font-serif);
@@ -56,4 +61,9 @@ body {
 ::selection {
   background-color: #ffc3e9;
   color: #43031a;
+}
+
+html.dark ::selection {
+  background-color: #8a1239;
+  color: #ffc3e9;
 }

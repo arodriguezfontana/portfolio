@@ -22,19 +22,18 @@ const Header = () => {
     window.location.href = "mailto:arodriguezfontana@gmail.com";
   };
 
-  const downloadCV = () => {
+  const downloadCV = (lang: 'es' | 'en') => {
     const link = document.createElement("a");
-    // Ensure compatibility with basePath in production
-    const isProd = process.env.NODE_ENV === 'production';
-    link.href = isProd ? "/portfolio/abril_rodriguez_cv.pdf" : "/abril_rodriguez_cv.pdf";
-    link.download = "Abril_Rodriguez_CV.pdf";
+    const filename = lang === 'es' ? "Abril_Rodriguez_CV_ES.pdf" : "Abril_Rodriguez_CV_EN.pdf";
+    link.href = `/${filename}`;
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <section id="top" className="relative min-h-[92vh] sm:min-h-screen flex items-center justify-center pt-24 pb-12 sm:pt-28 sm:pb-16 lg:py-0 overflow-hidden">
+    <section id="top" className="relative min-h-[92vh] sm:min-h-screen flex items-center justify-center pt-24 pb-4 sm:pt-28 sm:pb-6 lg:py-0 overflow-hidden">
       {/* Ambient pink and wine light glows (blur-120px / blur-140px) */}
       <div 
         aria-hidden="true" 
@@ -65,7 +64,7 @@ const Header = () => {
             {/* Editorial Lead Paragraph */}
             <p className="text-base sm:text-lg lg:text-xl text-[#8a5743] dark:text-[#e898cb] font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 sm:mb-10">
               {t('header_description_1')}
-              <span className="font-semibold text-[#640527] dark:text-white underline decoration-[#ffc3e9] decoration-2 underline-offset-4">
+              <span className="font-semibold text-[#640527] dark:text-white">
                 {t('header_description_2')}
               </span>
               {t('header_description_3')}
@@ -79,38 +78,46 @@ const Header = () => {
             </p>
 
             {/* Action Buttons: Primary, Secondary, CV and Socials */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-3.5">
               <Button
                 variant="primary"
                 onClick={goToMail}
-                icon={<Mail size={17} />}
+                icon={<Mail size={16} />}
               >
                 {t('header_contact_btn')}
               </Button>
 
               <Button
                 variant="secondary"
-                onClick={downloadCV}
-                icon={<Download size={17} />}
+                onClick={() => downloadCV('es')}
+                icon={<Download size={15} />}
               >
-                {t('header_download_cv_btn')}
+                {t('header_download_cv_es')}
               </Button>
 
-              <div className="flex items-center gap-2.5 pt-2 sm:pt-0">
+              <Button
+                variant="secondary"
+                onClick={() => downloadCV('en')}
+                icon={<Download size={15} />}
+              >
+                {t('header_download_cv_en')}
+              </Button>
+
+              <div className="flex items-center gap-2 pt-1 sm:pt-0">
                 <button
                   onClick={goToLinkedIn}
                   title="LinkedIn Profile"
-                  className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 hover:border-[#8a1239] hover:scale-105 transition-all duration-200 cursor-pointer"
+                  className="w-11 h-11 sm:w-11.5 sm:h-11.5 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 dark:hover:bg-[#ffc3e9]/10 hover:border-[#8a1239] dark:hover:border-[#ffc3e9] hover:scale-105 transition-all duration-200 cursor-pointer"
                 >
-                  <FaLinkedinIn size={17} />
+                  <FaLinkedinIn size={16} />
                 </button>
 
                 <button
                   onClick={goToGitHub}
                   title="GitHub Profile"
-                  className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 hover:border-[#8a1239] hover:scale-105 transition-all duration-200 cursor-pointer"
+                  className="w-11 h-11 sm:w-11.5 sm:h-11.5 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 dark:hover:bg-[#ffc3e9]/10 hover:border-[#8a1239] dark:hover:border-[#ffc3e9] hover:scale-105 transition-all duration-200 cursor-pointer"
                 >
-                  <FaGithub size={17} />
+                  <FaGithub size={16} />
                 </button>
               </div>
             </div>

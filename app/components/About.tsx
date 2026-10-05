@@ -28,7 +28,7 @@ import { useLanguage } from '../context/LenguageContext';
 const skillCategories = [
   {
     title: "Frontend",
-    icon: <Code2 size={15} className="text-[#8a1239]" />,
+    icon: <Code2 size={15} className="text-[#8a1239] dark:text-[#ffb1e3]" />,
     skills: [
       { name: "React", icon: <FaReact /> },
       { name: "Next.js", icon: <SiNextdotjs /> },
@@ -42,7 +42,7 @@ const skillCategories = [
   },
   {
     title: "Backend & Persistencia",
-    icon: <Database size={15} className="text-[#8a1239]" />,
+    icon: <Database size={15} className="text-[#8a1239] dark:text-[#ffb1e3]" />,
     skills: [
       { name: "Java", icon: <FaJava /> },
       { name: "Spring Boot", icon: <SiSpringboot /> },
@@ -60,7 +60,7 @@ const skillCategories = [
   },
   {
     title: "Herramientas & Arquitectura",
-    icon: <Layers size={15} className="text-[#8a1239]" />,
+    icon: <Layers size={15} className="text-[#8a1239] dark:text-[#ffb1e3]" />,
     skills: [
       { name: "Docker", icon: <SiDocker /> },
       { name: "LLM & IA", icon: <SiOpenai /> },
@@ -155,7 +155,7 @@ const About = () => {
                       {cat.skills.map((skill, sIdx) => (
                         <span
                           key={sIdx}
-                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white dark:bg-[#380e22] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9]/60 dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] hover:scale-105 transition-all duration-200"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white dark:bg-[#380e22] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9]/60 dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] dark:hover:bg-[#4a132e] hover:scale-105 transition-all duration-200"
                         >
                           <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs">{skill.icon}</span>
                           <span>{skill.name}</span>

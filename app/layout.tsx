@@ -19,8 +19,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Abril Rodríguez ✦ Portfolio Editorial",
-  description: "Portfolio personal de Abril Rodríguez - Desarrolladora Full Stack & Estudiante de Lic. en Informática. Estética Modern Luxury & Editorial.",
+  title: "Abril Rodríguez ✦ Portfolio",
+  description: "Portfolio personal de Abril Rodríguez.",
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23640527" d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg>',
   },

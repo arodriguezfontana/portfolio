@@ -11,25 +11,9 @@ const Projects = () => {
   const { t, language } = useLanguage();
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
-  const getImgPath = (name: string) => `/portfolio/${name}`;
+  const getImgPath = (name: string) => `/${name}`;
 
   const projectsList: ProjectData[] = [
-    {
-      id: "futval",
-      image: getImgPath("futval_image.png"),
-      images: [
-        getImgPath("futval_image.png"),
-      ],
-      title: t('proj_futval_title'),
-      category: language === 'es' ? "Fintech & Tokenización" : "Fintech & Tokenization",
-      inProgress: true,
-      technologies: assets.techsfutval,
-      description: t('proj_futval_desc'),
-      longDescription: language === 'es'
-        ? "Desarrollo de una plataforma backend y frontend de mercado financiero de tokens de jugadores de fútbol, basada en cotizaciones dinámicas calculadas mediante estrategias de performance y métricas extraídas de fuentes de datos externas. Arquitectura moderna con NestJS y React, enfocada en escalabilidad y pruebas unitarias con Jest."
-        : "Full-stack financial token marketplace for soccer players with dynamic pricing models derived from live performance strategies and external statistical APIs. Built on a clean NestJS and React stack with Jest test coverage.",
-      repo: "https://github.com/arodriguezfontana/desapp-gf",
-    },
     {
       id: "restoit",
       image: getImgPath("restoit_image.png"),
@@ -47,21 +31,37 @@ const Projects = () => {
       repo: "https://github.com/arodriguezfontana/tip",
     },
     {
-      id: "meli",
-      image: getImgPath("meli_image.png"),
+      id: "futval",
+      image: getImgPath("futval_image.png"),
       images: [
-        getImgPath("meli_image.png"),
+        getImgPath("futval_image.png"),
       ],
-      title: t('proj_meli_title'),
-      category: language === 'es' ? "Alta Concurrencia & WebSockets" : "High Concurrency & Real-Time",
-      inProgress: false,
-      technologies: assets.techsmeli,
-      description: t('proj_meli_desc'),
+      title: t('proj_futval_title'),
+      category: language === 'es' ? "Fintech & Tokenización" : "Fintech & Tokenization",
+      inProgress: true,
+      technologies: assets.techsfutval,
+      description: t('proj_futval_desc'),
       longDescription: language === 'es'
-        ? "Desarrollo de un sistema de alta concurrencia para compras grupales en tiempo real, integrando WebSockets y Redis para la sincronización instantánea de carritos, votaciones y división equitativa de pagos mediante una arquitectura full-stack con Go y React."
-        : "High-concurrency system for real-time collaborative shopping, leveraging WebSockets and Redis for instant cart synchronization, item voting, and bill splitting through a Go and React architecture.",
-      repo: "https://github.com/arodriguezfontana/meli-co-purchase",
-    },
+        ? "Desarrollo de una plataforma backend y frontend de mercado financiero de tokens de jugadores de fútbol, basada en cotizaciones dinámicas calculadas mediante estrategias de performance y métricas extraídas de fuentes de datos externas. Arquitectura moderna con NestJS y React, enfocada en escalabilidad y pruebas unitarias con Jest."
+        : "Full-stack financial token marketplace for soccer players with dynamic pricing models derived from live performance strategies and external statistical APIs. Built on a clean NestJS and React stack with Jest test coverage.",
+        repo: "https://github.com/arodriguezfontana/desapp-gf",
+      },
+      {
+        id: "accidenta",
+        image: getImgPath("accidenta_image.jpeg"),
+        images: [
+          getImgPath("accidenta_image.jpeg"),
+        ],
+        title: t('proj_accidenta_title'),
+        category: "Mobile & Geolocation",
+        inProgress: false,
+        technologies: assets.techsaccidenta,
+        description: t('proj_accidenta_desc'),
+        longDescription: language === 'es'
+          ? "Aplicación móvil de respuesta rápida y seguridad ciudadana con geolocalización continua. Facilita el reporte instantáneo de incidentes viales y emergencias médicas, almacenamiento de fichas de salud personales para socorristas, alertas SOS con difusión inmediata y un panel analítico que calcula mapas de calor y tasas de siniestralidad por zona geográfica."
+          : "Rapid-response public safety and medical emergency mobile application with real-time geolocation. Enables instant reporting of incidents, offline-ready personal medical records for first responders, emergency SOS broadcasts, and a statistical analytics dashboard mapping high-risk accident zones.",
+        repo: "https://github.com/arodriguezfontana/accidenta-fullstack",
+      },
     {
       id: "cth",
       image: getImgPath("cth_image.png"),
@@ -77,6 +77,22 @@ const Projects = () => {
         ? "Desarrollo de una plataforma web full-stack de gestión y seguimiento de compra inmobiliaria con múltiples perfiles de usuario, buscador avanzado de propiedades, sistema de favoritos, reseñas, reportes estadísticos e infraestructura Dockerizada con testing integral y CI/CD."
         : "Full-stack real estate property search and purchase tracking platform featuring role-based access, advanced filtering, favorites, reviews, analytics, and a Dockerized environment with end-to-end testing and CI/CD.",
       repo: "https://github.com/arodriguezfontana/compra-tu-hogar",
+    },
+    {
+      id: "meli",
+      image: getImgPath("meli_image.png"),
+      images: [
+        getImgPath("meli_image.png"),
+      ],
+      title: t('proj_meli_title'),
+      category: language === 'es' ? "Alta Concurrencia & WebSockets" : "High Concurrency & Real-Time",
+      inProgress: false,
+      technologies: assets.techsmeli,
+      description: t('proj_meli_desc'),
+      longDescription: language === 'es'
+        ? "Desarrollo de un sistema de alta concurrencia para compras grupales en tiempo real, integrando WebSockets y Redis para la sincronización instantánea de carritos, votaciones y división equitativa de pagos mediante una arquitectura full-stack con Go y React."
+        : "High-concurrency system for real-time collaborative shopping, leveraging WebSockets and Redis for instant cart synchronization, item voting, and bill splitting through a Go and React architecture.",
+      repo: "https://github.com/arodriguezfontana/meli-co-purchase",
     },
     {
       id: "despegar",
@@ -109,22 +125,6 @@ const Projects = () => {
         ? "Plataforma de comercio electrónico para videojuegos inspirada en los estándares de la industria. Diseñada bajo una arquitectura modular de tres capas que garantiza alta cohesión y bajo acoplamiento. Incluye catálogo interactivo, filtros dinámicos, pasarela de compra, gestión de usuarios y sincronización con interfaces web y móviles responsivas."
         : "Industry-standard inspired video game e-commerce platform. Architected with a clean three-tier structure ensuring high cohesion and low coupling. Includes interactive game catalog, dynamic filtering, checkout flows, user management, and seamless cross-platform responsive interfaces.",
       repo: "https://github.com/arodriguezfontana/gog-frontend",
-    },
-    {
-      id: "accidenta",
-      image: getImgPath("accidenta_image.jpeg"),
-      images: [
-        getImgPath("accidenta_image.jpeg"),
-      ],
-      title: t('proj_accidenta_title'),
-      category: "Mobile & Geolocation",
-      inProgress: false,
-      technologies: assets.techsaccidenta,
-      description: t('proj_accidenta_desc'),
-      longDescription: language === 'es'
-        ? "Aplicación móvil de respuesta rápida y seguridad ciudadana con geolocalización continua. Facilita el reporte instantáneo de incidentes viales y emergencias médicas, almacenamiento de fichas de salud personales para socorristas, alertas SOS con difusión inmediata y un panel analítico que calcula mapas de calor y tasas de siniestralidad por zona geográfica."
-        : "Rapid-response public safety and medical emergency mobile application with real-time geolocation. Enables instant reporting of incidents, offline-ready personal medical records for first responders, emergency SOS broadcasts, and a statistical analytics dashboard mapping high-risk accident zones.",
-      repo: "https://github.com/arodriguezfontana/accidenta-fullstack",
     },
     {
       id: "epers",

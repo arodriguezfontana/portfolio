@@ -20,8 +20,8 @@ const Navbar = () => {
 
   const links = [
     { href: "#top", label: "nav_intro" },
-    { href: "#experience", label: "nav_experience" },
     { href: "#projects", label: "nav_projects" },
+    { href: "#experience", label: "nav_experience" },
     { href: "#about", label: "nav_about" },
   ];
 
@@ -76,7 +76,7 @@ const Navbar = () => {
           <button
             onClick={toggleLanguage}
             title="Cambiar idioma / Change language"
-            className="px-2.5 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-[#fff2fb] dark:bg-[#43031a] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9]/60 hover:bg-[#ffc3e9] hover:text-[#43031a] transition-all duration-200 cursor-pointer"
+            className="px-2.5 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-[#fff2fb] dark:bg-[#43031a] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9]/60 dark:border-[#8a1239] hover:bg-[#ffc3e9] dark:hover:bg-[#8a1239] hover:text-[#43031a] dark:hover:text-white transition-all duration-200 cursor-pointer"
           >
             {language === 'es' ? 'EN' : 'ES'}
           </button>
@@ -93,7 +93,7 @@ const Navbar = () => {
           {/* Boutique Contact Button */}
           <button
             onClick={scrollToContact}
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold text-white bg-[#640527] hover:bg-[#75062e] shadow-md shadow-[#640527]/20 hover:scale-[1.03] transition-all duration-200 cursor-pointer"
+            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold text-white bg-[#640527] dark:bg-[#8a1239] hover:bg-[#75062e] dark:hover:bg-[#a31745] shadow-md shadow-[#640527]/20 hover:scale-[1.03] transition-all duration-200 cursor-pointer"
           >
             <span>{t('header_contact_btn')}</span>
             <ArrowUpRight size={14} />

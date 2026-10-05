@@ -17,9 +17,9 @@ export default function Home() {
         {/* 1. Hero Section */}
         <Header />
 
-        {/* Central container for editorial sections with identical vertical spacing */}
-        <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8 mt-20 md:mt-28">
-          <div className="w-full max-w-7xl space-y-20 md:space-y-28">
+        {/* Central container for editorial sections with immediate header-to-projects flow */}
+        <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8 mt-2 sm:mt-4 md:mt-6">
+          <div className="w-full max-w-7xl space-y-16 md:space-y-24">
             {/* 2. Featured Projects (Grid 3-4 cards) */}
             <Projects />
 
