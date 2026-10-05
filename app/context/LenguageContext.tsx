@@ -34,13 +34,28 @@ const translations = {
     
     // Experiencia
     'exp_title': { 'es': 'Experiencia', 'en': 'Work' },
-    'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
-    'exp3_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
-    'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de entregas para la materia Estrategias de Persistencia, con enfoque en el modelado y gestión de datos en motores SQL y NoSQL, brindando mentoría técnica a estudiantes en el diseño de arquitecturas de persistencia, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Teaching classes and grading project deliverables for the Persistence Strategies course, focusing on data modeling and management across SQL and NoSQL engines, while providing technical mentorship to students in designing persistence architectures, optimizing complex queries, and making strategic decisions based on specific use cases.' },
     
+    // Altitud
+    'exp_altitud_role': { 'es': 'Desarrolladora Full Stack', 'en': 'Full Stack Developer' },
+    'exp_altitud_badge': { 'es': 'Proyectos Independientes', 'en': 'Independent Projects' },
+    'exp_altitud_date': { 'es': 'Ene. 2025 - Actualidad', 'en': 'Jan. 2025 - Present' },
+    'exp_altitud_p1': { 'es': 'Desarrollo, mantenimiento y optimización de aplicaciones full-stack enfocadas en brindar una experiencia de usuario fluida y de alto rendimiento.', 'en': 'Development, maintenance, and optimization of full-stack applications focused on delivering a smooth and high-performance user experience.' },
+    'exp_altitud_p2': { 'es': 'Construcción e integración de soluciones tecnológicas a medida para diversos rubros (salud, comercios, entre otros), asegurando escalabilidad y calidad de código.', 'en': 'Building and integrating tailored solutions across diverse industries (healthcare, commerce, etc.), ensuring scalability and code quality.' },
+    'exp_altitud_p3': { 'es': 'Participación activa en el equipo bajo metodologías ágiles (Scrum), flujos de CI/CD y control de tareas.', 'en': 'Active team collaboration under agile methodologies (Scrum), CI/CD pipelines, and task tracking.' },
+    'exp_altitud_p4': { 'es': 'Monitoreo proactivo y resolución de incidencias para garantizar estabilidad y un óptimo funcionamiento en producción.', 'en': 'Proactive monitoring and incident resolution to ensure stability and seamless operation in production.' },
+
+    // Colegio Bruzzone
     'exp2_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
-    'exp2_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
+    'exp2_date_freelance': { 'es': 'Abr. 2024 - Actualidad', 'en': 'Apr. 2024 - Present' },
     'exp2_desc_freelance': { 'es': 'Planificación y dictado de clases de informática para estudiantes de 4to, 5to y 6to grado de nivel primario, junto con el diseño de actividades enfocadas en herramientas digitales (MS Office), fundamentos de la programación (Gobstones) y pensamiento computacional.', 'en': 'Lesson planning and instruction of computer science classes for 4th, 5th, and 6th-grade elementary school students, alongside designing activities focused on digital tools (MS Office), core programming fundamentals (Gobstones), and computational thinking.' },
+
+    // UNQ Ayudante
+    'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
+    'exp3_date_freelance': { 'es': 'Mar. 2024 - Actualidad', 'en': 'Mar. 2024 - Present' },
+    'exp_unq_course1_title': { 'es': 'Estrategias de Persistencia', 'en': 'Persistence Strategies' },
+    'exp_unq_course1_desc': { 'es': 'Dictado de clases y mentoría técnica a estudiantes, con foco en el diseño de APIs REST, arquitecturas de persistencia SQL y NoSQL, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Lecturing and technical mentorship for students, focusing on REST API design, SQL and NoSQL persistence architectures, complex query optimization, and strategic decision-making tailored to each use case.' },
+    'exp_unq_course2_title': { 'es': 'Programación con Objetos', 'en': 'Object-Oriented Programming' },
+    'exp_unq_course2_desc': { 'es': 'Supervisión de prácticas y resolución de consultas a estudiantes, con foco en el paradigma de objetos y Test-Driven Development (TDD).', 'en': 'Supervision of practical labs and student guidance, with a focus on object-oriented programming paradigms and Test-Driven Development (TDD).' },
     
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
