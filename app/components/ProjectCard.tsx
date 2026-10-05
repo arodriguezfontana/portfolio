@@ -18,6 +18,7 @@ type ProjectCardProps = {
   description: string;
   repo: string;
   category?: string;
+  inProgress?: boolean;
   onOpenDetails?: () => void;
 };
 
@@ -28,6 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   repo,
   category = "Editorial Tech",
+  inProgress = false,
   onOpenDetails,
 }) => {
   const { t } = useLanguage();
@@ -60,10 +62,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
 
-        {/* Category Pill */}
-        <div className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-[#8a1239] dark:text-[#ffc3e9] mb-2">
-          <span>✦</span>
-          <span>{category}</span>
+        {/* Category Pill and In Progress badge */}
+        <div className="flex flex-wrap items-center gap-2 mb-2">
+          <div className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-[#8a1239] dark:text-[#ffc3e9]">
+            <span>✦</span>
+            <span>{category}</span>
+          </div>
+          {inProgress && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#ffc3e9]/60 dark:bg-[#43031a] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9] dark:border-[#8a1239] animate-pulse">
+              {t('proj_in_progress')}
+            </span>
+          )}
         </div>
 
         {/* Project Title (clickable) */}

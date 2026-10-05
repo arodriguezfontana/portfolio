@@ -11,6 +11,7 @@ export type ProjectData = {
   images?: string[];
   title: string;
   category?: string;
+  inProgress?: boolean;
   technologies: {
     logo: React.ReactNode;
     tecnologia: string;
@@ -88,12 +89,19 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
       {/* Modal Dialog Card */}
       <div className="relative w-full max-w-3xl max-h-[90vh] bg-white/95 dark:bg-[#230713]/95 backdrop-blur-xl rounded-[2.5rem] border border-[#ffc3e9]/80 dark:border-[#8a1239]/60 shadow-2xl shadow-[#640527]/20 p-6 sm:p-8 md:p-10 overflow-y-auto z-10">
         
-        {/* Top bar: Category + Close Button */}
+        {/* Top bar: Category + In Progress + Close Button */}
         <div className="flex items-center justify-between gap-4 mb-4">
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#fff2fb] dark:bg-[#340c1e] border border-[#ffc3e9] dark:border-[#8a1239] text-xs font-semibold uppercase tracking-wider text-[#8a1239] dark:text-[#ffc3e9]">
-            <span>✦</span>
-            <span>{project.category || 'Proyecto Editorial'}</span>
-            <span>✦</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#fff2fb] dark:bg-[#340c1e] border border-[#ffc3e9] dark:border-[#8a1239] text-xs font-semibold uppercase tracking-wider text-[#8a1239] dark:text-[#ffc3e9]">
+              <span>✦</span>
+              <span>{project.category || 'Proyecto Editorial'}</span>
+              <span>✦</span>
+            </div>
+            {project.inProgress && (
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#ffc3e9]/60 dark:bg-[#43031a] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9] dark:border-[#8a1239] animate-pulse">
+                {t('proj_in_progress')}
+              </span>
+            )}
           </div>
 
           <button

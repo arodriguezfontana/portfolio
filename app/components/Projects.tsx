@@ -15,6 +15,70 @@ const Projects = () => {
 
   const projectsList: ProjectData[] = [
     {
+      id: "futval",
+      image: getImgPath("futval_image.png"),
+      images: [
+        getImgPath("futval_image.png"),
+      ],
+      title: t('proj_futval_title'),
+      category: language === 'es' ? "Fintech & Tokenización" : "Fintech & Tokenization",
+      inProgress: true,
+      technologies: assets.techsfutval,
+      description: t('proj_futval_desc'),
+      longDescription: language === 'es'
+        ? "Desarrollo de una plataforma backend y frontend de mercado financiero de tokens de jugadores de fútbol, basada en cotizaciones dinámicas calculadas mediante estrategias de performance y métricas extraídas de fuentes de datos externas. Arquitectura moderna con NestJS y React, enfocada en escalabilidad y pruebas unitarias con Jest."
+        : "Full-stack financial token marketplace for soccer players with dynamic pricing models derived from live performance strategies and external statistical APIs. Built on a clean NestJS and React stack with Jest test coverage.",
+      repo: "https://github.com/arodriguezfontana/desapp-gf",
+    },
+    {
+      id: "restoit",
+      image: getImgPath("restoit_image.png"),
+      images: [
+        getImgPath("restoit_image.png"),
+      ],
+      title: t('proj_restoit_title'),
+      category: language === 'es' ? "Gastronomía & IA Conversacional" : "AI & Restaurant Tech",
+      inProgress: true,
+      technologies: assets.techsrestoit,
+      description: t('proj_restoit_desc'),
+      longDescription: language === 'es'
+        ? "Desarrollo de una plataforma full-stack inteligente para la gestión de locales gastronómicos, que unifica pedidos web y canales conversacionales automatizados por IA vía WhatsApp en un panel administrativo en tiempo real con comandas virtuales por sectores y analítica predictiva."
+        : "Intelligent full-stack platform for restaurant management, unifying web ordering and AI-automated WhatsApp conversational channels into a real-time admin dashboard with virtual kitchen order routing and predictive analytics.",
+      repo: "https://github.com/arodriguezfontana/tip",
+    },
+    {
+      id: "meli",
+      image: getImgPath("meli_image.png"),
+      images: [
+        getImgPath("meli_image.png"),
+      ],
+      title: t('proj_meli_title'),
+      category: language === 'es' ? "Alta Concurrencia & WebSockets" : "High Concurrency & Real-Time",
+      inProgress: false,
+      technologies: assets.techsmeli,
+      description: t('proj_meli_desc'),
+      longDescription: language === 'es'
+        ? "Desarrollo de un sistema de alta concurrencia para compras grupales en tiempo real, integrando WebSockets y Redis para la sincronización instantánea de carritos, votaciones y división equitativa de pagos mediante una arquitectura full-stack con Go y React."
+        : "High-concurrency system for real-time collaborative shopping, leveraging WebSockets and Redis for instant cart synchronization, item voting, and bill splitting through a Go and React architecture.",
+      repo: "https://github.com/arodriguezfontana/meli-co-purchase",
+    },
+    {
+      id: "cth",
+      image: getImgPath("cth_image.png"),
+      images: [
+        getImgPath("cth_image.png"),
+      ],
+      title: t('proj_cth_title'),
+      category: language === 'es' ? "Proptech & DevOps CI/CD" : "Proptech & DevOps CI/CD",
+      inProgress: false,
+      technologies: assets.techscth,
+      description: t('proj_cth_desc'),
+      longDescription: language === 'es'
+        ? "Desarrollo de una plataforma web full-stack de gestión y seguimiento de compra inmobiliaria con múltiples perfiles de usuario, buscador avanzado de propiedades, sistema de favoritos, reseñas, reportes estadísticos e infraestructura Dockerizada con testing integral y CI/CD."
+        : "Full-stack real estate property search and purchase tracking platform featuring role-based access, advanced filtering, favorites, reviews, analytics, and a Dockerized environment with end-to-end testing and CI/CD.",
+      repo: "https://github.com/arodriguezfontana/compra-tu-hogar",
+    },
+    {
       id: "despegar",
       image: getImgPath("despegar_image.jpg"),
       images: [
@@ -22,6 +86,7 @@ const Projects = () => {
       ],
       title: t('proj_despegar_title'),
       category: "AI & Cloud Architecture",
+      inProgress: false,
       technologies: assets.techsdespegar,
       description: t('proj_despegar_desc'),
       longDescription: language === 'es'
@@ -37,6 +102,7 @@ const Projects = () => {
       ],
       title: t('proj_gog_title'),
       category: "Full Stack & E-Commerce",
+      inProgress: false,
       technologies: assets.techsgog,
       description: t('proj_gog_desc'),
       longDescription: language === 'es'
@@ -52,6 +118,7 @@ const Projects = () => {
       ],
       title: t('proj_accidenta_title'),
       category: "Mobile & Geolocation",
+      inProgress: false,
       technologies: assets.techsaccidenta,
       description: t('proj_accidenta_desc'),
       longDescription: language === 'es'
@@ -67,6 +134,7 @@ const Projects = () => {
       ],
       title: t('proj_epers_title'),
       category: "Polyglot Backend",
+      inProgress: false,
       technologies: assets.techsepers,
       description: t('proj_epers_desc'),
       longDescription: language === 'es'
@@ -82,6 +150,7 @@ const Projects = () => {
       ],
       title: t('proj_wordle_title'),
       category: "Interactive Web Game",
+      inProgress: false,
       technologies: assets.techswordle,
       description: t('proj_wordle_desc'),
       longDescription: language === 'es'
@@ -123,6 +192,7 @@ const Projects = () => {
               image={project.image}
               title={project.title}
               category={project.category}
+              inProgress={project.inProgress}
               technologies={project.technologies}
               description={project.description}
               repo={project.repo}

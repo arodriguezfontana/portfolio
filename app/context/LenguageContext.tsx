@@ -64,6 +64,20 @@ const translations = {
 
     'proj_despegar_title': { 'es': 'Asistente de Postventa con IA', 'en': 'AI-Powered After-Sales Assistant' },
     'proj_despegar_desc': { 'es': 'Desarrollo de un sistema inteligente full-stack para la automatización de contingencias de viajes, integrando servicios predictivos que detectan demoras o cancelaciones y gestionan compensaciones dinámicas según el perfil del usuario.', 'en': 'Full-stack development of an intelligent system for travel contingency automation, integrating predictive services to detect delays or cancellations and manage dynamic compensations based on user profiles.' },
+
+    'proj_futval_title': { 'es': 'Fútval', 'en': 'Fútval' },
+    'proj_futval_desc': { 'es': 'Desarrollo de una plataforma backend y frontend de mercado financiero de tokens de jugadores de fútbol, basada en cotizaciones dinámicas calculadas mediante estrategias de performance y métricas extraídas de fuentes de datos externas.', 'en': 'Full-stack development of a financial token marketplace for soccer players, featuring dynamic valuations derived from performance strategies and external statistical data sources.' },
+
+    'proj_restoit_title': { 'es': 'RestoIT', 'en': 'RestoIT' },
+    'proj_restoit_desc': { 'es': 'Desarrollo de una plataforma full-stack inteligente para la gestión de locales gastronómicos, que unifica pedidos web y canales conversacionales automatizados por IA vía WhatsApp en un panel administrativo en tiempo real con comandas virtuales por sectores y analítica predictiva.', 'en': 'Intelligent full-stack platform for restaurant management, unifying web ordering and AI-automated WhatsApp conversational channels into a real-time admin dashboard with virtual kitchen order routing and predictive analytics.' },
+
+    'proj_meli_title': { 'es': 'Sistema de Compra Grupal en Tiempo Real', 'en': 'Real-Time Co-Purchase System' },
+    'proj_meli_desc': { 'es': 'Desarrollo de un sistema de alta concurrencia para compras grupales en tiempo real, integrando WebSockets y Redis para la sincronización instantánea de carritos, votaciones y división equitativa de pagos mediante una arquitectura full-stack con Go y React.', 'en': 'High-concurrency system for real-time collaborative shopping, leveraging WebSockets and Redis for instant cart synchronization, item voting, and bill splitting through a Go and React architecture.' },
+
+    'proj_cth_title': { 'es': 'Compra tu Hogar', 'en': 'Compra tu Hogar' },
+    'proj_cth_desc': { 'es': 'Desarrollo de una plataforma web full-stack de gestión y seguimiento de compra inmobiliaria con múltiples perfiles de usuario, buscador avanzado de propiedades, sistema de favoritos, reseñas, reportes estadísticos e infraestructura Dockerizada con testing integral y CI/CD.', 'en': 'Full-stack real estate property search and purchase tracking platform featuring role-based access, advanced filtering, favorites, reviews, analytics, and a Dockerized environment with end-to-end testing and CI/CD.' },
+
+    'proj_in_progress': { 'es': 'En progreso', 'en': 'In progress' },
     
     // About me
     'about_title': { 'es': 'Sobre mí', 'en': 'About me' },
