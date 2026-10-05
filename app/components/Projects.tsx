@@ -6,13 +6,13 @@ import ProjectCard from './ProjectCard';
 import ProjectModal, { ProjectData } from './ProjectModal';
 import { assets } from '@/assets/assets';
 import { useLanguage } from '../context/LenguageContext';
+import { getAssetPath } from '../utils/basePath';
 
 const Projects = () => {
   const { t, language } = useLanguage();
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  const getImgPath = (name: string) => `${basePath}/${name}`;
+  const getImgPath = (name: string) => getAssetPath(name);
 
   const projectsList: ProjectData[] = [
     {

@@ -7,6 +7,8 @@ import { Download, Mail } from 'lucide-react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { useLanguage } from '../context/LenguageContext';
 
+import { getAssetPath } from '../utils/basePath';
+
 const Header = () => {
   const { t } = useLanguage();
 
@@ -23,10 +25,9 @@ const Header = () => {
   };
 
   const downloadCV = (lang: 'es' | 'en') => {
-    const link = document.createElement("a");
     const filename = lang === 'es' ? "Abril_Rodriguez_CV_ES.pdf" : "Abril_Rodriguez_CV_EN.pdf";
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-    link.href = `${basePath}/${filename}`;
+    const link = document.createElement("a");
+    link.href = getAssetPath(filename);
     link.download = filename;
     document.body.appendChild(link);
     link.click();
