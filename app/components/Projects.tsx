@@ -142,6 +142,7 @@ const Projects = () => {
         : "Microservices backend designed under Clean Architecture and Domain-Driven Design principles. Its standout feature is polyglot persistence: PostgreSQL handles ACID relational operations, MongoDB manages flexible documents, Neo4j analyzes relationship graphs, and Elasticsearch drives blazing-fast full-text searches.",
       repo: "https://github.com/arodriguezfontana/epersgeist-backend",
     },
+    /*
     {
       id: "wordle",
       image: getImgPath("wordle_image.png"),
@@ -158,6 +159,7 @@ const Projects = () => {
         : "Modern rendition of the beloved Wordle word-guessing game featuring fluid letter flip animations, virtual and physical keyboard detection, real-time dictionary validation, adjustable difficulty tiers, and persistent local score statistics.",
       repo: "https://github.com/arodriguezfontana/wordle-game",
     },
+    */
   ];
 
   return (
@@ -174,7 +176,7 @@ const Projects = () => {
 
       <Card
         icon={<Sparkles size={20} className="text-[#8a1239]" />}
-        subtitle={language === 'es' ? 'Trabajos Seleccionados' : 'Selected Works'}
+        // subtitle={language === 'es' ? 'Trabajos Seleccionados' : 'Selected Works'}
         title={
           <span>
             {t('proj_title')}{' '}
@@ -184,8 +186,8 @@ const Projects = () => {
           </span>
         }
       >
-        {/* Grid fixed to maximum 3 columns on desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Grid configured to 4 columns on desktop/xl screens */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
           {projectsList.map((project) => (
             <ProjectCard
               key={project.id || project.title}

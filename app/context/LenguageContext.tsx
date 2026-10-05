@@ -33,7 +33,7 @@ const translations = {
     'header_description_6': { 'es': 'Ciencia de Datos.', 'en': 'Data Science.' },
     
     // Experiencia
-    'exp_title': { 'es': 'Experiencia laboral', 'en': 'Work experience' },
+    'exp_title': { 'es': 'Experiencia', 'en': 'Work' },
     'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
     'exp3_date_freelance': { 'es': 'Mar. 2025 - Actualidad', 'en': 'Mar. 2025 - Present' },
     'exp3_desc_freelance': { 'es': 'Dictado de clases y supervisión de entregas para la materia Estrategias de Persistencia, con enfoque en el modelado y gestión de datos en motores SQL y NoSQL, brindando mentoría técnica a estudiantes en el diseño de arquitecturas de persistencia, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Teaching classes and grading project deliverables for the Persistence Strategies course, focusing on data modeling and management across SQL and NoSQL engines, while providing technical mentorship to students in designing persistence architectures, optimizing complex queries, and making strategic decisions based on specific use cases.' },
@@ -80,7 +80,7 @@ const translations = {
     'proj_in_progress': { 'es': 'En progreso', 'en': 'In progress' },
     
     // About me
-    'about_title': { 'es': 'Sobre mí', 'en': 'About me' },
+    'about_title': { 'es': 'Sobre', 'en': 'About' },
     'about_subtitle': { 'es': 'Historia & Enfoque', 'en': 'Story & Philosophy' },
     'about_1': { 'es': 'Desde pequeña ', 'en': 'Ever since I was little, ' },
     'about_2': { 'es': 'me apasiona la tecnología ', 'en': 'technology has been my true passion, ' },

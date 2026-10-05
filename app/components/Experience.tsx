@@ -18,12 +18,12 @@ const Experience = () => {
 
       <Card
         icon={<Sparkles size={20} className="text-[#8a1239]" />}
-        subtitle={language === 'es' ? 'Trayectoria & Roles' : 'Career & Roles'}
+        // subtitle={language === 'es' ? 'Trayectoria & Roles' : 'Career & Roles'}
         title={
           <span>
             {t('exp_title')}{' '}
             <span className="font-serif italic font-normal text-[#8a1239] dark:text-[#ffb1e3]">
-              {language === 'es' ? 'Profesional' : 'Journey'}
+              {language === 'es' ? 'Laboral' : 'Experience'}
             </span>
           </span>
         }
