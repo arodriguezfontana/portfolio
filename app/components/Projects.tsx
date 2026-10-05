@@ -11,7 +11,8 @@ const Projects = () => {
   const { t, language } = useLanguage();
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
-  const getImgPath = (name: string) => `/${name}`;
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const getImgPath = (name: string) => `${basePath}/${name}`;
 
   const projectsList: ProjectData[] = [
     {
