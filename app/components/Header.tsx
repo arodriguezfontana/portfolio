@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { assets } from '@/assets/assets';
 import Button from './Button';
-import { Download, Mail, ArrowUpRight } from 'lucide-react';
+import { Download, Mail } from 'lucide-react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { useLanguage } from '../context/LenguageContext';
 
@@ -34,45 +34,36 @@ const Header = () => {
   };
 
   return (
-    <section id="top" className="relative pt-32 pb-0 sm:pt-36 lg:pt-40 overflow-hidden">
+    <section id="top" className="relative min-h-[92vh] sm:min-h-screen flex items-center justify-center pt-24 pb-12 sm:pt-28 sm:pb-16 lg:py-0 overflow-hidden">
       {/* Ambient pink and wine light glows (blur-120px / blur-140px) */}
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[34rem] h-[34rem] rounded-full bg-[#ffc3e9]/40 blur-[130px] -z-10" 
+        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[38rem] h-[38rem] rounded-full bg-[#ffc3e9]/40 blur-[140px] -z-10" 
       />
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute top-1/3 -right-20 w-80 h-80 rounded-full bg-[#ffb1e3]/30 blur-[120px] -z-10" 
+        className="pointer-events-none absolute top-1/3 -right-20 w-96 h-96 rounded-full bg-[#ffb1e3]/30 blur-[130px] -z-10" 
       />
       <div 
         aria-hidden="true" 
-        className="pointer-events-none absolute bottom-0 -left-20 w-72 h-72 rounded-full bg-[#8a1239]/10 blur-[110px] -z-10" 
+        className="pointer-events-none absolute bottom-8 -left-20 w-80 h-80 rounded-full bg-[#8a1239]/10 blur-[120px] -z-10" 
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-14">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 sm:gap-14 lg:gap-16">
           
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
-            {/* Top editorial pill badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#ffc3e9] shadow-sm mb-6">
-              <span className="text-[#8a1239] text-xs">✦</span>
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#8a1239]">
-                Portfolio Editorial &middot; Tech &amp; Design
-              </span>
-              <span className="text-[#8a1239] text-xs">✦</span>
-            </div>
-
             {/* Main Headline with Cormorant Garamond Cursive accent */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#640527] dark:text-[#ffc3e9] tracking-tight leading-[1.15] mb-5">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-[#640527] dark:text-[#ffc3e9] tracking-tight leading-[1.12] mb-6">
               {t('header_hi')}{' '}
-              <span className="font-serif italic font-normal text-[#8a1239] dark:text-[#ffb1e3] text-5xl sm:text-6xl lg:text-7xl block sm:inline mt-1 sm:mt-0">
+              <span className="font-serif italic font-normal text-[#8a1239] dark:text-[#ffb1e3] text-5xl sm:text-6xl lg:text-7xl xl:text-8xl block sm:inline mt-1 sm:mt-0">
                 Abril Rodríguez
               </span>
             </h1>
 
             {/* Editorial Lead Paragraph */}
-            <p className="text-base sm:text-lg text-[#8a5743] dark:text-[#e898cb] font-normal leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
+            <p className="text-base sm:text-lg lg:text-xl text-[#8a5743] dark:text-[#e898cb] font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 sm:mb-10">
               {t('header_description_1')}
               <span className="font-semibold text-[#640527] dark:text-white underline decoration-[#ffc3e9] decoration-2 underline-offset-4">
                 {t('header_description_2')}
@@ -88,11 +79,11 @@ const Header = () => {
             </p>
 
             {/* Action Buttons: Primary, Secondary, CV and Socials */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
               <Button
                 variant="primary"
                 onClick={goToMail}
-                icon={<Mail size={16} />}
+                icon={<Mail size={17} />}
               >
                 {t('header_contact_btn')}
               </Button>
@@ -100,69 +91,54 @@ const Header = () => {
               <Button
                 variant="secondary"
                 onClick={downloadCV}
-                icon={<Download size={16} />}
+                icon={<Download size={17} />}
               >
                 {t('header_download_cv_btn')}
               </Button>
 
-              <div className="flex items-center gap-2 pt-2 sm:pt-0">
+              <div className="flex items-center gap-2.5 pt-2 sm:pt-0">
                 <button
                   onClick={goToLinkedIn}
                   title="LinkedIn Profile"
-                  className="w-11 h-11 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 hover:border-[#8a1239] hover:scale-105 transition-all duration-200 cursor-pointer"
+                  className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 hover:border-[#8a1239] hover:scale-105 transition-all duration-200 cursor-pointer"
                 >
-                  <FaLinkedinIn size={16} />
+                  <FaLinkedinIn size={17} />
                 </button>
 
                 <button
                   onClick={goToGitHub}
                   title="GitHub Profile"
-                  className="w-11 h-11 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 hover:border-[#8a1239] hover:scale-105 transition-all duration-200 cursor-pointer"
+                  className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-[#2d0a18] border border-[#ffc3e9] dark:border-[#8a1239] flex items-center justify-center text-[#640527] dark:text-[#ffc3e9] shadow-sm hover:bg-[#ffc3e9]/30 hover:border-[#8a1239] hover:scale-105 transition-all duration-200 cursor-pointer"
                 >
-                  <FaGithub size={16} />
+                  <FaGithub size={17} />
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Capsule / Pill Portrait with Girly Luxury Accents */}
-          <div className="relative flex flex-col items-center">
-            {/* Halo behind the portrait capsule */}
-            <div className="absolute inset-0 rounded-[3.5rem] bg-gradient-to-b from-[#ffc3e9] to-[#8a1239]/20 blur-xl scale-95 opacity-70 -z-10" />
+          {/* Circular Portrait with Girly Luxury Accents */}
+          <div className="relative shrink-0 flex items-center justify-center">
+            {/* Halo behind the circular portrait */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#ffc3e9] via-[#ffb1e3]/50 to-[#8a1239]/30 blur-2xl scale-105 opacity-80 -z-10" />
 
-            {/* Portrait capsule container */}
-            <div className="relative p-2.5 rounded-[3.5rem] bg-white/90 dark:bg-[#2d0a18]/90 backdrop-blur-md border-2 border-[#ffc3e9] shadow-2xl shadow-[#640527]/15 transition-transform duration-500 hover:scale-[1.02]">
-              <div className="relative w-48 h-64 sm:w-56 sm:h-72 lg:w-64 lg:h-80 overflow-hidden rounded-[3rem]">
+            {/* Circular portrait container */}
+            <div className="relative p-2.5 sm:p-3 rounded-full bg-white/90 dark:bg-[#2d0a18]/90 backdrop-blur-md border-2 border-[#ffc3e9] dark:border-[#8a1239]/60 shadow-2xl shadow-[#640527]/15 transition-transform duration-500 hover:scale-[1.02]">
+              <div className="relative w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 overflow-hidden rounded-full aspect-square">
                 <Image
                   src={assets.abril_image}
                   alt="Abril Rodríguez"
                   fill
                   priority
                   className="object-cover object-center filter saturate-[1.05]"
-                  sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
+                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 256px, 320px"
                 />
               </div>
 
               {/* Delicate sparkle corner pin */}
-              <div className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-[#640527] text-white flex items-center justify-center shadow-lg border-2 border-white text-xs font-bold">
+              <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#640527] text-white flex items-center justify-center shadow-lg border-2 border-white dark:border-[#2d0a18] text-xs font-bold">
                 ✦
               </div>
             </div>
-
-            {/* Floating availability badge pill */}
-            <button
-              onClick={goToLinkedIn}
-              className="mt-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 dark:bg-[#230713]/95 backdrop-blur-md border border-[#ffc3e9] shadow-md hover:shadow-lg hover:border-[#8a1239] transition-all duration-200 group cursor-pointer"
-            >
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8a1239] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#640527]"></span>
-              </span>
-              <span className="text-xs font-semibold text-[#640527] dark:text-[#ffc3e9]">
-                {t('header_available')}
-              </span>
-              <ArrowUpRight size={13} className="text-[#8a1239] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
           </div>
 
         </div>
