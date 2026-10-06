@@ -34,7 +34,7 @@ const Experience = () => {
             <ExperienceCard
               role={t('exp_altitud_role')}
               company="Altitud"
-              badge={t('exp_altitud_badge')}
+              // badge={t('exp_altitud_badge')}
               date={t('exp_altitud_date')}
             >
               <ul className="space-y-1.5 mt-2 text-xs sm:text-[13px] text-[#8a5743] dark:text-[#dcdcdc] leading-relaxed">
