@@ -27,6 +27,7 @@ import { useLanguage } from '../context/LenguageContext';
 
 const skillCategories = [
   {
+    titleKey: "about_skills_frontend",
     title: "Frontend",
     icon: <Code2 size={15} className="text-[#8a1239] dark:text-[#ffb1e3]" />,
     skills: [
@@ -41,6 +42,7 @@ const skillCategories = [
     ],
   },
   {
+    titleKey: "about_skills_backend",
     title: "Backend & Persistencia",
     icon: <Database size={15} className="text-[#8a1239] dark:text-[#ffb1e3]" />,
     skills: [
@@ -59,6 +61,7 @@ const skillCategories = [
     ],
   },
   {
+    titleKey: "about_skills_tools",
     title: "Herramientas & Arquitectura",
     icon: <Layers size={15} className="text-[#8a1239] dark:text-[#ffb1e3]" />,
     skills: [
@@ -147,20 +150,33 @@ const About = () => {
                         {cat.icon}
                       </div>
                       <h4 className="text-xs font-bold uppercase tracking-wider text-[#640527] dark:text-[#ffc3e9]">
-                        {cat.title}
+                        {t(cat.titleKey)}
                       </h4>
                     </div>
 
                     <div className="flex flex-wrap gap-1.5">
-                      {cat.skills.map((skill, sIdx) => (
-                        <span
-                          key={sIdx}
-                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white dark:bg-[#380e22] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9]/60 dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] dark:hover:bg-[#4a132e] hover:scale-105 transition-all duration-200"
-                        >
-                          <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs">{skill.icon}</span>
-                          <span>{skill.name}</span>
-                        </span>
-                      ))}
+                      {cat.skills.map((skill, sIdx) => {
+                        const skillName =
+                          language === 'en'
+                            ? (skill.name === 'Ciencia de Datos'
+                                ? 'Data Science'
+                                : skill.name === 'Microservicios'
+                                ? 'Microservices'
+                                : skill.name === 'LLM & IA'
+                                ? 'LLM & AI'
+                                : skill.name)
+                            : skill.name;
+
+                        return (
+                          <span
+                            key={sIdx}
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white dark:bg-[#380e22] text-[#640527] dark:text-[#ffc3e9] border border-[#ffc3e9]/60 dark:border-[#8a1239]/50 shadow-2xs hover:bg-[#fff2fb] dark:hover:bg-[#4a132e] hover:scale-105 transition-all duration-200"
+                          >
+                            <span className="text-[#8a1239] dark:text-[#ffb1e3] text-xs">{skill.icon}</span>
+                            <span>{skillName}</span>
+                          </span>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

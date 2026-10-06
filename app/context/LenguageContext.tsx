@@ -106,6 +106,9 @@ const translations = {
     'about_5': { 'es': 'acercar la tecnología a todas las personas ', 'en': 'bring technology closer to everyone ' },
     'about_6': { 'es': 'creando soluciones que resuelvan problemas reales, generen impacto positivo y mejoren situaciones de la vida diaria.', 'en': 'by crafting solutions that solve real problems, spark positive impact, and elevate everyday experiences.' },
     'about_skills_title': { 'es': 'Habilidades & Tecnologías', 'en': 'Skills & Technologies' },
+    'about_skills_frontend': { 'es': 'Frontend', 'en': 'Frontend' },
+    'about_skills_backend': { 'es': 'Backend & Persistencia', 'en': 'Backend & Persistence' },
+    'about_skills_tools': { 'es': 'Herramientas & Arquitectura', 'en': 'Tools & Architecture' },
     'about_values_title': { 'es': 'Pilares de Trabajo', 'en': 'Core Pillars' },
 
     // Footer
