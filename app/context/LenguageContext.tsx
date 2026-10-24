@@ -44,8 +44,8 @@ const translations = {
         'en': ' with experience in '
     },
     'header_description_4': {
-        'es': 'desarrollo Full Stack.',
-        'en': 'Full Stack development.'
+        'es': 'Desarrollo Full Stack.',
+        'en': 'Full Stack Development.'
     },
     'header_description_5': {
         'es': ' Actualmente profundizando en ',
