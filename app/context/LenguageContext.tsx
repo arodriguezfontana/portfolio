@@ -40,7 +40,7 @@ const translations = {
     // Altitud
     'exp_altitud_role': { 'es': 'Desarrolladora Full Stack', 'en': 'Full Stack Developer' },
     'exp_altitud_badge': { 'es': 'Proyectos Independientes', 'en': 'Independent Projects' },
-    'exp_altitud_date': { 'es': 'Ene. 2025 - Actualidad', 'en': 'Jan. 2025 - Present' },
+    'exp_altitud_date': { 'es': 'Jun. 2025 - Actualidad', 'en': 'Jun. 2025 - Present' },
     'exp_altitud_p1': { 'es': 'Desarrollo, mantenimiento y optimización de aplicaciones full-stack enfocadas en brindar una experiencia de usuario fluida y de alto rendimiento.', 'en': 'Development, maintenance, and optimization of full-stack applications focused on delivering a smooth and high-performance user experience.' },
     'exp_altitud_p2': { 'es': 'Construcción e integración de soluciones tecnológicas a medida para diversos rubros (salud, comercios, entre otros), asegurando escalabilidad y calidad de código.', 'en': 'Building and integrating tailored solutions across diverse industries (healthcare, commerce, etc.), ensuring scalability and code quality.' },
     'exp_altitud_p3': { 'es': 'Participación activa en el equipo bajo metodologías ágiles (Scrum), flujos de CI/CD y control de tareas.', 'en': 'Active team collaboration under agile methodologies (Scrum), CI/CD pipelines, and task tracking.' },
@@ -49,7 +49,7 @@ const translations = {
     // Colegio Bruzzone
     'exp2_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
     'exp2_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
-    'exp2_desc_freelance': { 'es': 'Planificación y dictado de clases de informática para estudiantes de 4to, 5to y 6to grado de nivel primario, junto con el diseño de actividades enfocadas en herramientas digitales (MS Office), fundamentos de la programación (Gobstones) y pensamiento computacional.', 'en': 'Lesson planning and instruction of computer science classes for 4th, 5th, and 6th-grade elementary school students, alongside designing activities focused on digital tools (MS Office), core programming fundamentals (Gobstones), and computational thinking.' },
+    'exp2_desc_freelance': { 'es': 'Planificación y dictado de clases de informática para estudiantes de nivel primario y secundario, junto con el diseño de actividades enfocadas en herramientas digitales, fundamentos de la programación y pensamiento computacional.', 'en': 'Lesson planning and instruction of computer science classes for elementary school and high school students, alongside designing activities focused on digital tools, core programming fundamentals, and computational thinking.' },
 
     // UNQ Ayudante
     'exp3_role': { 'es': 'Ayudante de Cátedra', 'en': 'Teaching Assistant' },
