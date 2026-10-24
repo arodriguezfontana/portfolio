@@ -18,7 +18,7 @@ const translations = {
     'nav_about': { 'es': 'Sobre mí', 'en': 'About me' },
     'nav_skills': { 'es': 'Habilidades', 'en': 'Skills' },
     'nav_contact': { 'es': 'Contacto', 'en': 'Contact' },
-    
+
     // Header
     'header_available': { 'es': 'Disponible para trabajar', 'en': 'Available for work' },
     'header_hi': { 'es': 'Hola, soy', 'en': "Hi, I'm" },
@@ -27,16 +27,38 @@ const translations = {
     'header_download_cv_es': { 'es': 'ES', 'en': 'ES' },
     'header_download_cv_en': { 'es': 'EN', 'en': 'EN' },
 
-    'header_description_1': { 'es': 'Estudiante avanzada de la ', 'en': 'Advanced student of ' },
-    'header_description_2': { 'es': 'Licenciatura en Informática ', 'en': 'B.S. in Computer Science ' },
-    'header_description_3': { 'es': 'con experiencia en ', 'en': 'with experience in ' },
-    'header_description_4': { 'es': 'Desarrollo Full Stack. ', 'en': 'Full Stack Development. ' },
-    'header_description_5': { 'es': 'Actualmente profundizando en ', 'en': 'Currently deepening my expertise in ' },
-    'header_description_6': { 'es': 'Ciencia de Datos.', 'en': 'Data Science.' },
-    
+    'header_role': {
+        'es': 'Software Engineer',
+        'en': 'Software Engineer'
+    },
+    'header_description_1': {
+        'es': ' y estudiante avanzada de la ',
+        'en': ' & advanced student of '
+    },
+    'header_description_2': {
+        'es': 'Licenciatura en Informática',
+        'en': 'B.S. in Computer Science'
+    },
+    'header_description_3': {
+        'es': ' con experiencia en ',
+        'en': ' with experience in '
+    },
+    'header_description_4': {
+        'es': 'desarrollo Full Stack.',
+        'en': 'Full Stack development.'
+    },
+    'header_description_5': {
+        'es': ' Actualmente profundizando en ',
+        'en': ' Currently expanding into '
+    },
+    'header_description_6': {
+        'es': 'Ciencia de Datos.',
+        'en': 'Data Science.'
+    },
+
     // Experiencia
     'exp_title': { 'es': 'Experiencia', 'en': 'Work' },
-    
+
     // Altitud
     'exp_altitud_role': { 'es': 'Desarrolladora Full Stack', 'en': 'Full Stack Developer' },
     'exp_altitud_badge': { 'es': 'Proyectos Independientes', 'en': 'Independent Projects' },
@@ -58,7 +80,7 @@ const translations = {
     'exp_unq_course1_desc': { 'es': 'Dictado de clases y mentoría técnica a estudiantes, con foco en el diseño de APIs REST, arquitecturas de persistencia SQL y NoSQL, optimización de consultas complejas y toma de decisiones estratégicas según cada caso de uso.', 'en': 'Lecturing and technical mentorship for students, focusing on REST API design, SQL and NoSQL persistence architectures, complex query optimization, and strategic decision-making tailored to each use case.' },
     'exp_unq_course2_title': { 'es': 'Programación con Objetos', 'en': 'Object-Oriented Programming' },
     'exp_unq_course2_desc': { 'es': 'Supervisión de prácticas y resolución de consultas a estudiantes, con foco en el paradigma de objetos y Test-Driven Development (TDD).', 'en': 'Supervision of practical labs and student guidance, with a focus on object-oriented programming paradigms and Test-Driven Development (TDD).' },
-    
+
     // Projects
     'proj_title': { 'es': 'Proyectos', 'en': 'Projects' },
     'proj_repo_link': { 'es': 'Ver Repositorio', 'en': 'View Repository' },
@@ -69,10 +91,10 @@ const translations = {
     'proj_modal_details': { 'es': 'Detalles del proyecto', 'en': 'Project details' },
     'proj_gog_title': { 'es': 'E-Commerce de Videojuegos Multiplataforma', 'en': 'Multiplatform E-Commerce for Video Games' },
     'proj_gog_desc': { 'es': 'Construcción de una plataforma de venta de videojuegos mediante una arquitectura modular de tres capas, garantizando interfaces web y móviles completamente responsivas con flujos dinámicos de usuario.', 'en': 'Construction of a video game retail platform using a modular three-tier architecture, ensuring fully responsive web and mobile interfaces with dynamic user workflows.' },
-    
+
     'proj_accidenta_title': { 'es': 'Aplicación Móvil de Emergencias', 'en': 'Emergency Mobile Application' },
     'proj_accidenta_desc': { 'es': 'Desarrollo de una solución de seguridad crítica con geolocalización en tiempo real, envío instantáneo de alertas, gestión de fichas médicas, reportes multimedia de incidentes y un panel estadístico de accidentabilidad por zonas.', 'en': 'Development of a critical safety solution featuring real-time geolocation, instant alert broadcasting, medical profile management, multimedia incident reporting, and a statistical dashboard tracking accident rates by zone.' },
-    
+
     'proj_epers_title': { 'es': 'Arquitectura de Persistencia Políglota', 'en': 'Polyglot Persistence Architecture' },
     'proj_epers_desc': { 'es': 'Diseño de un backend modular bajo Clean Architecture y microservicios, implementando una estrategia de almacenamiento híbrido (SQL, NoSQL, Grafos y Búsqueda avanzada) optimizada según cada caso de uso.', 'en': 'Design of a modular backend under Clean Architecture and microservices, implementing a hybrid storage strategy (SQL, NoSQL, Graphs, and Advanced Search) optimized for specific use cases.' },
 
@@ -95,7 +117,7 @@ const translations = {
     'proj_cth_desc': { 'es': 'Desarrollo de una plataforma web full-stack de gestión y seguimiento de compra inmobiliaria con múltiples perfiles de usuario, buscador avanzado de propiedades, sistema de favoritos, reseñas, reportes estadísticos e infraestructura Dockerizada con testing integral y CI/CD.', 'en': 'Full-stack real estate property search and purchase tracking platform featuring role-based access, advanced filtering, favorites, reviews, analytics, and a Dockerized environment with end-to-end testing and CI/CD.' },
 
     'proj_in_progress': { 'es': 'En progreso', 'en': 'In progress' },
-    
+
     // About me
     'about_title': { 'es': 'Sobre', 'en': 'About' },
     'about_subtitle': { 'es': 'Historia & Enfoque', 'en': 'Story & Philosophy' },
@@ -126,20 +148,20 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         const savedLang = localStorage.getItem('lang') as Language;
         if (savedLang) {
             setLanguage(savedLang);
-            document.documentElement.lang = savedLang; 
+            document.documentElement.lang = savedLang;
         }
     }, []);
 
     const t = (key: string): string => {
         const translation = translations[key as keyof typeof translations];
-        return translation ? translation[language] : key; 
+        return translation ? translation[language] : key;
     };
 
     const toggleLanguage = () => {
         setLanguage(prevLang => {
             const newLang = prevLang === 'es' ? 'en' : 'es';
             localStorage.setItem('lang', newLang);
-            document.documentElement.lang = newLang; 
+            document.documentElement.lang = newLang;
             return newLang;
         });
     };
