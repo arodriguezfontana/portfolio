@@ -62,7 +62,7 @@ const translations = {
     // Altitud
     'exp_altitud_role': { 'es': 'Desarrolladora Full Stack', 'en': 'Full Stack Developer' },
     'exp_altitud_badge': { 'es': 'Proyectos Independientes', 'en': 'Independent Projects' },
-    'exp_altitud_date': { 'es': 'Jun. 2025 - Actualidad', 'en': 'Jun. 2025 - Present' },
+    'exp_altitud_date': { 'es': 'Ago. 2025 - Actualidad', 'en': 'Aug. 2025 - Present' },
     'exp_altitud_p1': { 'es': 'Desarrollo, mantenimiento y optimización de aplicaciones full-stack enfocadas en brindar una experiencia de usuario fluida y de alto rendimiento.', 'en': 'Development, maintenance, and optimization of full-stack applications focused on delivering a smooth and high-performance user experience.' },
     'exp_altitud_p2': { 'es': 'Construcción e integración de soluciones tecnológicas a medida para diversos rubros (salud, comercios, entre otros), asegurando escalabilidad y calidad de código.', 'en': 'Building and integrating tailored solutions across diverse industries (healthcare, commerce, etc.), ensuring scalability and code quality.' },
     'exp_altitud_p3': { 'es': 'Participación activa en el equipo bajo metodologías ágiles (Scrum), flujos de CI/CD y control de tareas.', 'en': 'Active team collaboration under agile methodologies (Scrum), CI/CD pipelines, and task tracking.' },
