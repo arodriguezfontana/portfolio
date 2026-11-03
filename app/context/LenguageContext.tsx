@@ -70,7 +70,7 @@ const translations = {
 
     // Colegio Bruzzone
     'exp2_role': { 'es': 'Profesora de Informática', 'en': 'Computer Science Teacher' },
-    'exp2_date_freelance': { 'es': 'Abr. 2026 - Actualidad', 'en': 'Apr. 2026 - Present' },
+    'exp2_date_freelance': { 'es': 'Mar. 2026 - Actualidad', 'en': 'Mar. 2026 - Present' },
     'exp2_desc_freelance': { 'es': 'Planificación y dictado de clases de informática para estudiantes de nivel primario y secundario, junto con el diseño de actividades enfocadas en herramientas digitales, fundamentos de la programación y pensamiento computacional.', 'en': 'Lesson planning and instruction of computer science classes for elementary school and high school students, alongside designing activities focused on digital tools, core programming fundamentals, and computational thinking.' },
 
     // UNQ Ayudante
